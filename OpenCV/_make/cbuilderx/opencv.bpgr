@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Project Group-->
+<projectgroup>
+  <project path="cxcore.cbx"/>
+  <project path="cv.cbx"/>
+  <project path="cxts.cbx"/>
+  <project path="cxcoretest.cbx"/>
+  <project path="trs.cbx"/>
+  <project path="highgui.cbx"/>
+  <project path="cvtest.cbx"/>
+  <project path="cvaux.cbx"/>
+  <project path="cvsample.cbx"/>
+</projectgroup>

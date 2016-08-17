@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cxcore - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"..\..\_temp\cxcore_Rls/cxcore.res" /d "NDEBUG" "D:\OpenCV\cxcore\src\cxcore.rc"" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3C.tmp" with contents
+[
+/nologo /G6 /MD /W4 /Zi /O2 /Ob2 /I "." /I "..\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "CVAPI_EXPORTS" /FR"..\..\_temp\cxcore_Rls/" /Fp"..\..\_temp\cxcore_Rls/cxcore.pch" /Yu"_cxcore.h" /Fo"..\..\_temp\cxcore_Rls/" /Fd"..\..\_temp\cxcore_Rls/" /FD /c 
+"D:\OpenCV\cxcore\src\cxalloc.cpp"
+"D:\OpenCV\cxcore\src\cxarithm.cpp"
+"D:\OpenCV\cxcore\src\cxarray.cpp"
+"D:\OpenCV\cxcore\src\cxcmp.cpp"
+"D:\OpenCV\cxcore\src\cxconvert.cpp"
+"D:\OpenCV\cxcore\src\cxcopy.cpp"
+"D:\OpenCV\cxcore\src\cxdatastructs.cpp"
+"D:\OpenCV\cxcore\src\cxdrawing.cpp"
+"D:\OpenCV\cxcore\src\cxdxt.cpp"
+"D:\OpenCV\cxcore\src\cxerror.cpp"
+"D:\OpenCV\cxcore\src\cxjacobieigens.cpp"
+"D:\OpenCV\cxcore\src\cxlogic.cpp"
+"D:\OpenCV\cxcore\src\cxmathfuncs.cpp"
+"D:\OpenCV\cxcore\src\cxmatmul.cpp"
+"D:\OpenCV\cxcore\src\cxmatrix.cpp"
+"D:\OpenCV\cxcore\src\cxmean.cpp"
+"D:\OpenCV\cxcore\src\cxmeansdv.cpp"
+"D:\OpenCV\cxcore\src\cxminmaxloc.cpp"
+"D:\OpenCV\cxcore\src\cxnorm.cpp"
+"D:\OpenCV\cxcore\src\cxouttext.cpp"
+"D:\OpenCV\cxcore\src\cxpersistence.cpp"
+"D:\OpenCV\cxcore\src\cxrand.cpp"
+"D:\OpenCV\cxcore\src\cxsumpixels.cpp"
+"D:\OpenCV\cxcore\src\cxsvd.cpp"
+"D:\OpenCV\cxcore\src\cxswitcher.cpp"
+"D:\OpenCV\cxcore\src\cxtables.cpp"
+"D:\OpenCV\cxcore\src\cxutils.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3C.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3D.tmp" with contents
+[
+/nologo /G6 /MD /W4 /Zi /O2 /Ob2 /I "." /I "..\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "CVAPI_EXPORTS" /FR"..\..\_temp\cxcore_Rls/" /Fp"..\..\_temp\cxcore_Rls/cxcore.pch" /Yc"_cxcore.h" /Fo"..\..\_temp\cxcore_Rls/" /Fd"..\..\_temp\cxcore_Rls/" /FD /c 
+"D:\OpenCV\cxcore\src\cxprecomp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3D.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib advapi32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\_temp\cxcore_Rls/cxcore096va.pdb" /debug /machine:I386 /nodefaultlib:"libmmd.lib" /out:"..\..\bin\cxcore096va.dll" /implib:"../../lib/cxcore.lib" 
+\OpenCV\_temp\cxcore_Rls\cxalloc.obj
+\OpenCV\_temp\cxcore_Rls\cxarithm.obj
+\OpenCV\_temp\cxcore_Rls\cxarray.obj
+\OpenCV\_temp\cxcore_Rls\cxcmp.obj
+\OpenCV\_temp\cxcore_Rls\cxconvert.obj
+\OpenCV\_temp\cxcore_Rls\cxcopy.obj
+\OpenCV\_temp\cxcore_Rls\cxdatastructs.obj
+\OpenCV\_temp\cxcore_Rls\cxdrawing.obj
+\OpenCV\_temp\cxcore_Rls\cxdxt.obj
+\OpenCV\_temp\cxcore_Rls\cxerror.obj
+\OpenCV\_temp\cxcore_Rls\cxjacobieigens.obj
+\OpenCV\_temp\cxcore_Rls\cxlogic.obj
+\OpenCV\_temp\cxcore_Rls\cxmathfuncs.obj
+\OpenCV\_temp\cxcore_Rls\cxmatmul.obj
+\OpenCV\_temp\cxcore_Rls\cxmatrix.obj
+\OpenCV\_temp\cxcore_Rls\cxmean.obj
+\OpenCV\_temp\cxcore_Rls\cxmeansdv.obj
+\OpenCV\_temp\cxcore_Rls\cxminmaxloc.obj
+\OpenCV\_temp\cxcore_Rls\cxnorm.obj
+\OpenCV\_temp\cxcore_Rls\cxouttext.obj
+\OpenCV\_temp\cxcore_Rls\cxpersistence.obj
+\OpenCV\_temp\cxcore_Rls\cxprecomp.obj
+\OpenCV\_temp\cxcore_Rls\cxrand.obj
+\OpenCV\_temp\cxcore_Rls\cxsumpixels.obj
+\OpenCV\_temp\cxcore_Rls\cxsvd.obj
+\OpenCV\_temp\cxcore_Rls\cxswitcher.obj
+\OpenCV\_temp\cxcore_Rls\cxtables.obj
+\OpenCV\_temp\cxcore_Rls\cxutils.obj
+\OpenCV\_temp\cxcore_Rls\cxcore.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP3E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+cxprecomp.cpp
+Compiling...
+cxalloc.cpp
+cxarithm.cpp
+cxarray.cpp
+cxcmp.cpp
+cxconvert.cpp
+cxcopy.cpp
+cxdatastructs.cpp
+cxdrawing.cpp
+cxdxt.cpp
+cxerror.cpp
+cxjacobieigens.cpp
+cxlogic.cpp
+cxmathfuncs.cpp
+cxmatmul.cpp
+cxmatrix.cpp
+cxmean.cpp
+cxmeansdv.cpp
+cxminmaxloc.cpp
+cxnorm.cpp
+cxouttext.cpp
+Generating Code...
+Compiling...
+cxpersistence.cpp
+cxrand.cpp
+cxsumpixels.cpp
+cxsvd.cpp
+cxswitcher.cpp
+cxtables.cpp
+cxutils.cpp
+Generating Code...
+Linking...
+   Creating library ../../lib/cxcore.lib and object ../../lib/cxcore.exp
+
+
+
+<h3>Results</h3>
+cxcore096va.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

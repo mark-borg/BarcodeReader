@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cv - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib d:/opencv/lib/cxcore.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\_temp\CV_Rls/cv096va.pdb" /debug /machine:I386 /nodefaultlib:"libmmd.lib" /out:"..\..\bin\cv096va.dll" /implib:"../../lib/cv.lib" /libpath:"..\..\lib" 
+\OpenCV\_temp\CV_Rls\cvadapthresh.obj
+\OpenCV\_temp\CV_Rls\cvcalccontrasthistogram.obj
+\OpenCV\_temp\CV_Rls\cvcanny.obj
+\OpenCV\_temp\CV_Rls\cvcolor.obj
+\OpenCV\_temp\CV_Rls\cvcontours.obj
+\OpenCV\_temp\CV_Rls\cvconvolve.obj
+\OpenCV\_temp\CV_Rls\cvcorner.obj
+\OpenCV\_temp\CV_Rls\cvcornersubpix.obj
+\OpenCV\_temp\CV_Rls\cvderiv.obj
+\OpenCV\_temp\CV_Rls\cvfeatureselect.obj
+\OpenCV\_temp\CV_Rls\cvfloodfill.obj
+\OpenCV\_temp\CV_Rls\cvhistogram.obj
+\OpenCV\_temp\CV_Rls\cvimgwarp.obj
+\OpenCV\_temp\CV_Rls\cvmineval.obj
+\OpenCV\_temp\CV_Rls\cvmoments.obj
+\OpenCV\_temp\CV_Rls\cvmorph.obj
+\OpenCV\_temp\CV_Rls\cvprecorner.obj
+\OpenCV\_temp\CV_Rls\cvpyramids.obj
+\OpenCV\_temp\CV_Rls\cvsamplers.obj
+\OpenCV\_temp\CV_Rls\cvsmooth.obj
+\OpenCV\_temp\CV_Rls\cvtemplmatch.obj
+\OpenCV\_temp\CV_Rls\cvthresh.obj
+\OpenCV\_temp\CV_Rls\cvapprox.obj
+\OpenCV\_temp\CV_Rls\cvcontourtree.obj
+\OpenCV\_temp\CV_Rls\cvconvhull.obj
+\OpenCV\_temp\CV_Rls\cvdistransform.obj
+\OpenCV\_temp\CV_Rls\cvdominants.obj
+\OpenCV\_temp\CV_Rls\cvemd.obj
+\OpenCV\_temp\CV_Rls\cvgeometry.obj
+\OpenCV\_temp\CV_Rls\cvhough.obj
+\OpenCV\_temp\CV_Rls\cvlinefit.obj
+\OpenCV\_temp\CV_Rls\cvmatchcontours.obj
+\OpenCV\_temp\CV_Rls\cvpgh.obj
+\OpenCV\_temp\CV_Rls\cvpyrsegmentation.obj
+\OpenCV\_temp\CV_Rls\cvrotcalipers.obj
+\OpenCV\_temp\CV_Rls\cvshapedescr.obj
+\OpenCV\_temp\CV_Rls\cvsubdivision2d.obj
+\OpenCV\_temp\CV_Rls\cvcamshift.obj
+\OpenCV\_temp\CV_Rls\cvcondens.obj
+\OpenCV\_temp\CV_Rls\cvkalman.obj
+\OpenCV\_temp\CV_Rls\cvlkpyramid.obj
+\OpenCV\_temp\CV_Rls\cvmotempl.obj
+\OpenCV\_temp\CV_Rls\cvoptflowbm.obj
+\OpenCV\_temp\CV_Rls\cvoptflowhs.obj
+\OpenCV\_temp\CV_Rls\cvoptflowlk.obj
+\OpenCV\_temp\CV_Rls\cvsnakes.obj
+\OpenCV\_temp\CV_Rls\cvcalcimagehomography.obj
+\OpenCV\_temp\CV_Rls\cvcalibinit.obj
+\OpenCV\_temp\CV_Rls\cvcalibration.obj
+\OpenCV\_temp\CV_Rls\cvfundam.obj
+\OpenCV\_temp\CV_Rls\cvposit.obj
+\OpenCV\_temp\CV_Rls\cvundistort.obj
+\OpenCV\_temp\CV_Rls\cvhaar.obj
+\OpenCV\_temp\CV_Rls\cvaccum.obj
+\OpenCV\_temp\CV_Rls\cvsumpixels.obj
+\OpenCV\_temp\CV_Rls\cvswitcher.obj
+\OpenCV\_temp\CV_Rls\cvtables.obj
+\OpenCV\_temp\CV_Rls\cvutils.obj
+\OpenCV\_temp\CV_Rls\cvprecomp.obj
+\OpenCV\_temp\CV_Rls\cv.res
+\OpenCV\lib\cxcore.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP42.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library ../../lib/cv.lib and object ../../lib/cv.exp
+
+
+
+<h3>Results</h3>
+cv096va.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

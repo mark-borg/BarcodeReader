@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cvaux - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"..\..\_temp\cvaux_Rls/cvaux.res" /d "NDEBUG" "C:\Program Files\OpenCV\cvaux\src\cvaux.rc"" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP51.tmp" with contents
+[
+/nologo /MD /W4 /Zi /O2 /Ob2 /I "../include" /I "../../cxcore/include" /I "../../cv/include" /I "../../cv/src" /D "NDEBUG" /D "CVAPI_EXPORTS" /D "WIN32" /D "_WINDOWS" /Fp"..\..\_temp\cvaux_Rls/cvaux.pch" /Yu"_cvaux.h" /Fo"..\..\_temp\cvaux_Rls/" /Fd"..\..\_temp\cvaux_Rls/" /FD /Zm200 /c 
+"C:\Program Files\OpenCV\cvaux\src\camshift.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cv3dtracker.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvaux.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvauxutils.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvcalibfilter.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvcorrespond.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvcorrimages.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvcreatehandmask.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvdpstereo.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cveigenobjects.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvepilines.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvface.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvfacedetection.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvfacetemplate.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvfindface.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvfindhandregion.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvhmm.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvhmm1d.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvhmmobs.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlcm.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlee.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlevmar.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlevmarprojbandle.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlevmartrif.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlines.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvlmeds.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvmorphcontours.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvmorphing.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvprewarp.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvscanlines.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvsegment.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvsubdiv2.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvtexture.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvtrifocal.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvvecfacetracking.cpp"
+"C:\Program Files\OpenCV\cvaux\src\cvvideo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP51.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP52.tmp" with contents
+[
+/nologo /MD /W4 /Zi /O2 /Ob2 /I "../include" /I "../../cxcore/include" /I "../../cv/include" /I "../../cv/src" /D "NDEBUG" /D "CVAPI_EXPORTS" /D "WIN32" /D "_WINDOWS" /Fp"..\..\_temp\cvaux_Rls/cvaux.pch" /Yc"_cvaux.h" /Fo"..\..\_temp\cvaux_Rls/" /Fd"..\..\_temp\cvaux_Rls/" /FD /Zm200 /c 
+"C:\Program Files\OpenCV\cvaux\src\precomp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP52.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+cv.lib cxcore.lib kernel32.lib user32.lib gdi32.lib /nologo /dll /incremental:no /pdb:"..\..\_temp\cvaux_Rls/cvaux096.pdb" /debug /machine:I386 /nodefaultlib:"libmmd.lib" /out:"..\..\bin/cvaux096.dll" /implib:"..\..\lib/cvaux.lib" /libpath:"..\..\lib" 
+"\Program Files\OpenCV\_temp\cvaux_Rls\camshift.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cv3dtracker.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvaux.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvauxutils.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvcalibfilter.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvcorrespond.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvcorrimages.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvcreatehandmask.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvdpstereo.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cveigenobjects.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvepilines.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvface.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvfacedetection.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvfacetemplate.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvfindface.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvfindhandregion.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvhmm.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvhmm1d.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvhmmobs.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlcm.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlee.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlevmar.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlevmarprojbandle.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlevmartrif.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlines.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvlmeds.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvmorphcontours.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvmorphing.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvprewarp.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvscanlines.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvsegment.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvsubdiv2.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvtexture.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvtrifocal.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvvecfacetracking.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvvideo.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\precomp.obj"
+"\Program Files\OpenCV\_temp\cvaux_Rls\cvaux.res"
+"\Program Files\OpenCV\lib\cxcore.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP53.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+precomp.cpp
+Compiling...
+camshift.cpp
+cv3dtracker.cpp
+cvaux.cpp
+cvauxutils.cpp
+cvcalibfilter.cpp
+cvcorrespond.cpp
+cvcorrimages.cpp
+cvcreatehandmask.cpp
+cvdpstereo.cpp
+cveigenobjects.cpp
+cvepilines.cpp
+cvface.cpp
+cvfacedetection.cpp
+cvfacetemplate.cpp
+cvfindface.cpp
+cvfindhandregion.cpp
+cvhmm.cpp
+cvhmm1d.cpp
+cvhmmobs.cpp
+cvlcm.cpp
+Generating Code...
+Compiling...
+cvlee.cpp
+cvlevmar.cpp
+cvlevmarprojbandle.cpp
+cvlevmartrif.cpp
+cvlines.cpp
+cvlmeds.cpp
+cvmorphcontours.cpp
+cvmorphing.cpp
+cvprewarp.cpp
+cvscanlines.cpp
+cvsegment.cpp
+cvsubdiv2.cpp
+cvtexture.cpp
+cvtrifocal.cpp
+cvvecfacetracking.cpp
+cvvideo.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\lib/cvaux.lib and object ..\..\lib/cvaux.exp
+
+
+
+<h3>Results</h3>
+cvaux096.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

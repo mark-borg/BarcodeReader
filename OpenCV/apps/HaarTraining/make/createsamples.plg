@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cvhaartraining - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP81.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\src" /I "..\include" /I "../../../cv/include" /I "../../../cv/src" /I "../../../cxcore/include" /I "../../../otherlibs/highgui" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"../../../_temp/cvhaartraining_dbg/cvhaartraining.pch" /YX /Fo"../../../_temp/cvhaartraining_dbg/" /Fd"../../../_temp/cvhaartraining_dbg/" /FD /GZ -Qopenmp -Qopenmp_report2 /c 
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvboost.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvcommon.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvhaarclassifier.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvhaartraining.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvsamples.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP81.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP82.tmp" with contents
+[
+/nologo /out:"../../../lib/cvhaartrainingd.lib" 
+"\Program Files\OpenCV\_temp\cvhaartraining_dbg\cvboost.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_dbg\cvcommon.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_dbg\cvhaarclassifier.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_dbg\cvhaartraining.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_dbg\cvsamples.obj"
+"\Program Files\OpenCV\lib\CVd.lib"
+"\Program Files\OpenCV\lib\HighGUId.lib"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP82.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '-Qopenmp'
+Command line warning D4002 : ignoring unknown option '-Qopenmp_report2'
+cvboost.cpp
+cvcommon.cpp
+cvhaarclassifier.cpp
+cvhaartraining.cpp
+cvsamples.cpp
+Creating library...
+HighGUId.lib(highgui096d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in CVd.lib(cv096d.dll); second definition ignored
+<h3>
+--------------------Configuration: createsamples - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP84.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\src" /I "..\include" /I "../../../cv/include" /I "../../../cv/src" /I "../../../cxcore/include" /I "../../../otherlibs/highgui" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"../../../_temp/createsamples_dbg/createsamples.pch" /YX /Fo"../../../_temp/createsamples_dbg/" /Fd"../../../_temp/createsamples_dbg/" /FD /GZ /c 
+"C:\Program Files\OpenCV\apps\HaarTraining\src\createsamples.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP84.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP85.tmp" with contents
+[
+cvhaartrainingd.lib highguid.lib cxcored.lib cvd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"../../../_temp/createsamples_dbg/createsamplesd.pdb" /debug /machine:I386 /nodefaultlib:"libmmdd.lib" /out:"../../../bin/createsamplesd.exe" /pdbtype:sept /libpath:"../../../lib" /libpath:"../../../otherlibs/_Ipl/lib/msvc" 
+"\Program Files\OpenCV\_temp\createsamples_dbg\createsamples.obj"
+"\Program Files\OpenCV\lib\cvhaartrainingd.lib"
+"\Program Files\OpenCV\lib\CVd.lib"
+"\Program Files\OpenCV\lib\HighGUId.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP85.tmp"
+<h3>Output Window</h3>
+Compiling...
+createsamples.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+createsamplesd.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

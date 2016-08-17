@@ -1,0 +1,214 @@
+<?xml version='1.0'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+
+	<Product Name='BarcodeReader Demo' Version='1.0' Id='{866DF8D6-9CC4-462a-B907-B835AB238B15}' Manufacturer='Lightning Cube Software' Language='1033' Codepage='1252' UpgradeCode='{9F138703-1203-4bfb-B32F-4F256116D21C}'>
+	
+		<Package Id='*' Description='BarcodeReader Demo Installer' Comments='(c) Lightning Cube Software' Manufacturer='Lightning Cube Software' InstallerVersion='300' Keywords='Installer' Compressed='yes' Languages='1033' SummaryCodepage='1252' />
+		
+		<!-- ****** CHANGE BELOW ****** -->		
+			<Property Id='ARPCOMMENTS'>BarcodeReader Demo</Property>
+			<Property Id='ARPURLINFOABOUT'>http://www.lightningcube.com</Property>		
+			<Property Id='ARPURLUPDATEINFO'>http://www.lightningcube.com/pages/custom_solutions/vision/index.htm</Property>
+			<Property Id='ARPCONTACT'>support@lightningcube.com</Property>
+			<Property Id='ARPNOREPAIR'>1</Property>
+		<!-- ********************* -->
+
+		
+		<Media Id='1' Cabinet='package.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+
+		<Property Id='DiskPrompt' Value="BarcodeReader Demo Installation [1]" />
+		
+		<Property Id="ALLUSERS">1</Property> 
+		
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+		        <Directory Id='LightningCubeFolder' Name='Lightning Cube Software'>
+					<Directory Id='INSTALLDIR' Name='BarcodeReaderDemo'>
+
+						<Component Id='MainExecutable' Guid='{062CB0B8-820A-4980-B59C-F0173A644845}'>
+							<File Id="BarcodeReader" Name='BarcodeReader.exe' DiskId='1' Source='../../../BarcodeReader/BarcodeReader.exe' Vital='yes'>
+								<Shortcut Id="BarcodeReaderDemoMenuShortcut" Directory="ProgramMenuDir" Name="BarcodeReader" WorkingDirectory='INSTALLDIR' Icon="BarcodeReaderIcon" IconIndex="0" />
+								<Shortcut Id="BarcodeReaderDesktopShortcut" Directory="DesktopFolder" Name="BarcodeReader" WorkingDirectory='INSTALLDIR' Icon="BarcodeReaderIcon" IconIndex="0" />
+							</File>
+						</Component>
+						
+			            <Component Id='Manual' Guid='{88F90DF1-5181-4fc8-BB6E-59069BDA11C0}'>
+							<File Id='Manual' Name='BarcodeReader.chm' DiskId='1' Source='../../../BarcodeReader/BarcodeReader.chm' Vital='yes' >
+								<Shortcut Id="HelpFileMenuShortcut" Directory="ProgramMenuDir" WorkingDirectory='INSTALLDIR' Name="BarcodeReader Help" />
+								<Shortcut Id="HelpFileDesktopShortcut" Directory="DesktopFolder" WorkingDirectory='INSTALLDIR' Name="BarcodeReader Help" />
+							</File>
+			            </Component>
+						
+			            <Component Id='EULA' Guid='{7AFD8DF4-EBE1-4f96-8769-5294BA4901E5}'>
+							<File Id='EULA' Name='license.txt' DiskId='1' Source='../../../BarcodeReader/license.txt' Vital='yes'>
+								<Shortcut Id="EULAMenuShortcut" Directory="ProgramMenuDir" WorkingDirectory='INSTALLDIR' Name="license" />
+							</File>
+			            </Component>
+						
+						<Component Id='DLLs' Guid='{EFD1C844-8E0C-4d17-B737-499DFB9E6565}'>
+							<File Id="cxcoreLibrary" Name='cxcore096va.dll' DiskId='1' Source='../../../barcodereader/cxcore096va.dll' Vital='yes' />
+							<File Id="cvLibrary" Name='cv096va.dll' DiskId='1' Source='../../../barcodereader/cv096va.dll' Vital='yes' />
+							<File Id="highguiLibrary" Name='highgui096va.dll' DiskId='1' Source='../../../barcodereader/highgui096va.dll' Vital='yes' />
+						</Component>
+
+						<Merge Id='CRT' Language='1033' SourceFile='d:\Program Files\Common Files\Merge Modules\microsoft_vc80_crt_x86.msm' DiskId='1' />
+						<Merge Id='CRT Policy' Language='1033' SourceFile='d:\Program Files\Common Files\Merge Modules\policy_8_0_Microsoft_VC80_CRT_x86.msm' DiskId='1' />
+
+						<Directory Id='SAMPLES_DIR' Name='data'>
+							<Directory Id='EAN13_DIR' Name='ean13'>
+								<Component Id='EAN13' Guid='{839B6128-FC00-4e73-8228-31E807DCFE07}'>
+									<File Id="ean13m000" Name='000.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/000.jpg' Vital='yes' />
+									<File Id="ean13m001" Name='001.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/001.jpg' Vital='yes' />
+									<File Id="ean13m002" Name='002.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/002.jpg' Vital='yes' />
+									<File Id="ean13m003" Name='003.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/003.jpg' Vital='yes' />
+									<File Id="ean13m004" Name='004.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/004.jpg' Vital='yes' />
+									<File Id="ean13m005" Name='005.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/005.jpg' Vital='yes' />
+									<File Id="ean13m006" Name='006.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/006.jpg' Vital='yes' />
+									<File Id="ean13m007" Name='007.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/007.jpg' Vital='yes' />
+									<File Id="ean13m008" Name='008.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/008.jpg' Vital='yes' />
+									<File Id="ean13m009" Name='009.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/009.jpg' Vital='yes' />
+									
+									<File Id="ean13m010" Name='010.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/010.jpg' Vital='yes' />
+									<File Id="ean13m011" Name='011.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/011.jpg' Vital='yes' />
+									<File Id="ean13m012" Name='012.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/012.jpg' Vital='yes' />
+									<File Id="ean13m013" Name='013.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/013.jpg' Vital='yes' />
+									<File Id="ean13m014" Name='014.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/014.jpg' Vital='yes' />
+									<File Id="ean13m015" Name='015.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/015.jpg' Vital='yes' />
+									<File Id="ean13m016" Name='016.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/016.jpg' Vital='yes' />
+									<File Id="ean13m017" Name='017.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/017.jpg' Vital='yes' />
+									<File Id="ean13m018" Name='018.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/018.jpg' Vital='yes' />
+									<File Id="ean13m019" Name='019.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/019.jpg' Vital='yes' />										
+									
+									<File Id="ean13m020" Name='020.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/020.jpg' Vital='yes' />
+									<File Id="ean13m021" Name='021.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/021.jpg' Vital='yes' />
+									<File Id="ean13m022" Name='022.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/022.jpg' Vital='yes' />
+									<File Id="ean13m023" Name='023.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/023.jpg' Vital='yes' />
+									<File Id="ean13m024" Name='024.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/024.jpg' Vital='yes' />
+									<File Id="ean13m025" Name='025.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/025.jpg' Vital='yes' />
+									<File Id="ean13m026" Name='026.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/026.jpg' Vital='yes' />
+									<File Id="ean13m027" Name='027.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/027.jpg' Vital='yes' />
+									<File Id="ean13m028" Name='028.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/028.jpg' Vital='yes' />
+									<File Id="ean13m029" Name='029.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/029.jpg' Vital='yes' />									
+								
+									<File Id="ean13m030" Name='030.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/030.jpg' Vital='yes' />
+									<File Id="ean13m031" Name='031.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/031.jpg' Vital='yes' />
+									<File Id="ean13m032" Name='032.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/032.jpg' Vital='yes' />
+									<File Id="ean13m033" Name='033.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/033.jpg' Vital='yes' />
+									<File Id="ean13m034" Name='034.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/034.jpg' Vital='yes' />
+									<File Id="ean13m035" Name='035.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/035.jpg' Vital='yes' />
+									<File Id="ean13m036" Name='036.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/036.jpg' Vital='yes' />
+									<File Id="ean13m037" Name='037.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/037.jpg' Vital='yes' />
+									<File Id="ean13m038" Name='038.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/038.jpg' Vital='yes' />
+									<File Id="ean13m039" Name='039.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/039.jpg' Vital='yes' />
+									
+									<File Id="ean13m040" Name='040.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/040.jpg' Vital='yes' />
+									<File Id="ean13m041" Name='041.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/041.jpg' Vital='yes' />
+									<File Id="ean13m042" Name='042.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/042.jpg' Vital='yes' />
+									<File Id="ean13m043" Name='043.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/043.jpg' Vital='yes' />
+									<File Id="ean13m044" Name='044.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/044.jpg' Vital='yes' />
+									<File Id="ean13m045" Name='045.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/045.jpg' Vital='yes' />
+									<File Id="ean13m046" Name='046.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/046.jpg' Vital='yes' />
+									<File Id="ean13m047" Name='047.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/047.jpg' Vital='yes' />
+									<File Id="ean13m048" Name='048.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/048.jpg' Vital='yes' />
+									<File Id="ean13m049" Name='049.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/049.jpg' Vital='yes' />										
+									
+									<File Id="ean13m050" Name='050.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/050.jpg' Vital='yes' />
+									<File Id="ean13m051" Name='051.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/051.jpg' Vital='yes' />
+									<File Id="ean13m052" Name='052.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/052.jpg' Vital='yes' />
+									<File Id="ean13m053" Name='053.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/053.jpg' Vital='yes' />
+									<File Id="ean13m054" Name='054.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/054.jpg' Vital='yes' />
+									<File Id="ean13m055" Name='055.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/055.jpg' Vital='yes' />
+									<File Id="ean13m056" Name='056.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/056.jpg' Vital='yes' />
+									<File Id="ean13m057" Name='057.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/057.jpg' Vital='yes' />
+									<File Id="ean13m058" Name='058.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/058.jpg' Vital='yes' />
+									<File Id="ean13m059" Name='059.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/059.jpg' Vital='yes' />
+									
+									<File Id="ean13m060" Name='060.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/060.jpg' Vital='yes' />
+									<File Id="ean13m061" Name='061.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/061.jpg' Vital='yes' />
+									<File Id="ean13m062" Name='062.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/062.jpg' Vital='yes' />
+									<File Id="ean13m063" Name='063.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/063.jpg' Vital='yes' />
+									<File Id="ean13m064" Name='064.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/064.jpg' Vital='yes' />
+									<File Id="ean13m065" Name='065.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/065.jpg' Vital='yes' />
+									<File Id="ean13m066" Name='066.jpg' DiskId='1' Source='../../../barcodereader/data/ean13/066.jpg' Vital='yes' />
+								</Component>
+							</Directory>
+							
+							<Directory Id='UPC_A_DIR' Name='upc-a'>
+								<Component Id='UPCA' Guid='{AD879EC6-C61E-4278-A2B4-790FED84414D}'>
+									<File Id="upca000" Name='000.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/000.jpg' Vital='yes' />
+									<File Id="upca001" Name='001.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/001.jpg' Vital='yes' />
+									<File Id="upca002" Name='002.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/002.jpg' Vital='yes' />
+									<File Id="upca003" Name='003.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/003.jpg' Vital='yes' />
+									<File Id="upca004" Name='004.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/004.jpg' Vital='yes' />
+									<File Id="upca005" Name='005.jpg' DiskId='1' Source='../../../barcodereader/data/upc-a/005.jpg' Vital='yes' />
+								</Component>
+							</Directory>
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
+
+			<Directory Id='SystemFolder' Name='SFiles'>
+				<Component Id='SystemDLLs' Guid='{1954B32D-FCE4-4fb4-9C67-B2E99D365C61}' SharedDllRefCount='yes'>
+					<File Id="cxcoreLibrarySys" Name='cxcore096va.dll' DiskId='1' Source='../../../barcodereader/cxcore096va.dll' Vital='yes' />
+					<File Id="cvLibrarySys" Name='cv.dll' DiskId='1' Source='../../../barcodereader/cv096va.dll' Vital='yes' />
+					<File Id="highguiLibrarySys" Name='highgui096va.dll' DiskId='1' Source='../../../barcodereader/highgui096va.dll' Vital='yes' />
+				</Component>
+			</Directory>
+			
+			<Directory Id="ProgramMenuFolder" Name="Programs">
+				<Directory Id="ProgramMenuDir" Name="BarcodeReader Demo" />
+			</Directory>
+
+			<Directory Id="DesktopFolder" Name="Desktop" />				
+		</Directory>
+		
+		<Feature Id='Complete' Title='BarcodeReader Demo' Description='BarcodeReader Demo Installation' Display='expand' Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<ComponentRef Id='MainExecutable' />
+			<ComponentRef Id='DLLs' />
+			<ComponentRef Id='SystemDLLs' />
+			<ComponentRef Id='Manual' />
+			<ComponentRef Id='EULA' />
+			<ComponentRef Id='EAN13' />
+			<ComponentRef Id='UPCA' />
+			<MergeRef Id='CRT' />
+			<MergeRef Id='CRT Policy' />
+		</Feature>		
+
+		<Property Id="WIXUI_INSTALLDIR" Value="LightningCubeFolder" />
+		<UIRef Id="WixUI_ErrorProgressText" />
+		<UIRef Id="WixUI_InstallDir" />
+		<UIRef Id="WixUI_Common" />
+		
+		<WixVariable Id="WixUIBannerBmp" Value="bitmaps/bannrbmp.bmp" />  
+		<WixVariable Id="WixUIDialogBmp" Value="bitmaps/dlgbmp.bmp" />  
+		<WixVariable Id="WixUILicenseRtf" Value="LICENSE.rtf" />
+
+		<Icon Id="BarcodeReaderIcon" SourceFile="../../../BarCodeReader/barcodereader.ico" />
+		
+				
+		<CustomAction Id='LaunchApplication' FileKey='BarcodeReader' ExeCommand='"[INSTALLDIR]\"' Execute="immediate" Impersonate="yes" Return='asyncNoWait'></CustomAction>
+		
+		<CustomAction Id='ResetCheckbox' Property="LAUNCHAPPONEXIT" Value="0" />
+		
+		<Property Id="LAUNCHAPPONEXIT" Value="1" />
+		<UI>
+			<Publish Dialog="MyExitDialog" Control="Finish" Order="1" Event="DoAction" Value="LaunchApplication">LAUNCHAPPONEXIT AND NOT (WixUI_InstallMode = "Remove")</Publish> 
+			
+			<Publish Dialog="MyExitDialog" Control="Finish" Order="2" Event="EndDialog" Value="Return"></Publish> 
+		</UI>		
+		
+
+		
+		<!-- This will ensure that the LaunchConditions are executed only after searching -->
+		<InstallUISequence>
+			<LaunchConditions				After='AppSearch' />
+		</InstallUISequence>
+		
+		<InstallExecuteSequence>
+			<LaunchConditions				After='AppSearch' />
+		</InstallExecuteSequence>
+  
+	</Product>
+	
+</Wix>

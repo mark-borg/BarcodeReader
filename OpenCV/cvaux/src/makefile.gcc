@@ -1,0 +1,157 @@
+# Makefile for GNU C/C++ 3.x or later
+
+CXX = g++
+LINK = g++
+
+ifdef debug
+
+SUFFIX = d
+DR = _Dbg
+
+else
+
+SUFFIX = 
+DR = _Rls
+
+endif
+
+OUTBIN = ..\..\bin/cvaux096$(SUFFIX).dll
+OUTLIB = ..\..\lib\libcvaux$(SUFFIX).a
+
+OBJS = ..\..\_temp\cvaux$(DR)_gcc\camshift.o ..\..\_temp\cvaux$(DR)_gcc\cv3dtracker.o \
+..\..\_temp\cvaux$(DR)_gcc\cvaux.o ..\..\_temp\cvaux$(DR)_gcc\cvauxutils.o \
+..\..\_temp\cvaux$(DR)_gcc\cvcalibfilter.o ..\..\_temp\cvaux$(DR)_gcc\cvcorrespond.o \
+..\..\_temp\cvaux$(DR)_gcc\cvcorrimages.o \
+..\..\_temp\cvaux$(DR)_gcc\cvcreatehandmask.o ..\..\_temp\cvaux$(DR)_gcc\cvdpstereo.o \
+..\..\_temp\cvaux$(DR)_gcc\cveigenobjects.o ..\..\_temp\cvaux$(DR)_gcc\cvepilines.o \
+..\..\_temp\cvaux$(DR)_gcc\cvface.o ..\..\_temp\cvaux$(DR)_gcc\cvfacedetection.o \
+..\..\_temp\cvaux$(DR)_gcc\cvfacetemplate.o ..\..\_temp\cvaux$(DR)_gcc\cvfindface.o \
+..\..\_temp\cvaux$(DR)_gcc\cvfindhandregion.o ..\..\_temp\cvaux$(DR)_gcc\cvhmm.o \
+..\..\_temp\cvaux$(DR)_gcc\cvhmm1d.o ..\..\_temp\cvaux$(DR)_gcc\cvhmmobs.o \
+..\..\_temp\cvaux$(DR)_gcc\cvlcm.o ..\..\_temp\cvaux$(DR)_gcc\cvlee.o \
+..\..\_temp\cvaux$(DR)_gcc\cvlevmar.o ..\..\_temp\cvaux$(DR)_gcc\cvlevmarprojbandle.o \
+..\..\_temp\cvaux$(DR)_gcc\cvlevmartrif.o ..\..\_temp\cvaux$(DR)_gcc\cvlines.o \
+..\..\_temp\cvaux$(DR)_gcc\cvlmeds.o ..\..\_temp\cvaux$(DR)_gcc\cvmorphcontours.o \
+..\..\_temp\cvaux$(DR)_gcc\cvmorphing.o ..\..\_temp\cvaux$(DR)_gcc\cvprewarp.o \
+..\..\_temp\cvaux$(DR)_gcc\cvscanlines.o ..\..\_temp\cvaux$(DR)_gcc\cvsegment.o \
+..\..\_temp\cvaux$(DR)_gcc\cvsubdiv2.o ..\..\_temp\cvaux$(DR)_gcc\cvtexture.o \
+..\..\_temp\cvaux$(DR)_gcc\cvtrifocal.o \
+..\..\_temp\cvaux$(DR)_gcc\cvvecfacetracking.o ..\..\_temp\cvaux$(DR)_gcc\cvvideo.o \
+..\..\_temp\cvaux$(DR)_gcc\precomp.o 
+
+OBJ_SHRT = camshift.o cv3dtracker.o cvaux.o cvauxutils.o cvcalibfilter.o \
+cvcorrespond.o cvcorrimages.o cvcreatehandmask.o cvdpstereo.o cveigenobjects.o \
+cvepilines.o cvface.o cvfacedetection.o cvfacetemplate.o cvfindface.o \
+cvfindhandregion.o cvhmm.o cvhmm1d.o cvhmmobs.o cvlcm.o cvlee.o cvlevmar.o \
+cvlevmarprojbandle.o cvlevmartrif.o cvlines.o cvlmeds.o cvmorphcontours.o \
+cvmorphing.o cvprewarp.o cvscanlines.o cvsegment.o cvsubdiv2.o cvtexture.o \
+cvtrifocal.o cvvecfacetracking.o cvvideo.o precomp.o 
+
+
+
+INC = ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h \
+../include/cvaux.h ../include/cvaux.hpp 
+
+
+CXXFLAGS2 = -I"../../cv/include" -I"../include" -I"../../cxcore/include" -I"../../cv/src" -I"." -Wall -c -o 
+LINKFLAGS2 = -L"../../lib" -o$(OUTBIN) -shared -Wl,-call_shared,--out-implib,$(OUTLIB) 
+
+ifdef debug
+
+CXXFLAGS = -D"CVAPI_EXPORTS" -D"WIN32" -D"_WINDOWS" -D"_DEBUG" -O0 -ggdb3 $(CXXFLAGS2)
+LIBS = -lcvd -lcxcored -lkernel32 -luser32 -lgdi32 
+LINKFLAGS = $(LINKFLAGS2) 
+
+else
+
+CXXFLAGS = -D"CVAPI_EXPORTS" -D"NDEBUG" -D"WIN32" -D"_WINDOWS" -O3 -g -fomit-frame-pointer -march=i686 -ffast-math $(CXXFLAGS2)
+LIBS = -lcv -lcxcore -lkernel32 -luser32 -lgdi32 
+LINKFLAGS = $(LINKFLAGS2) 
+
+endif
+
+
+$(OUTBIN): $(OBJS)
+	-mkdir ..\..\bin 2> nul
+	-mkdir ..\..\lib 2> nul
+	-move "..\..\_temp\cvaux$(DR)_gcc\*.o" .
+	$(LINK) $(LINKFLAGS) $(OBJ_SHRT) $(LIBS)
+	-move *.o "..\..\_temp\cvaux$(DR)_gcc"
+
+all: $(OUTBIN)
+
+..\..\_temp\cvaux$(DR)_gcc\camshift.o: .\camshift.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	@-mkdir ..\..\_temp\cvaux$(DR)_gcc 2>nul
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\camshift.o .\camshift.cpp
+..\..\_temp\cvaux$(DR)_gcc\cv3dtracker.o: .\cv3dtracker.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cv3dtracker.o .\cv3dtracker.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvaux.o: .\cvaux.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvaux.o .\cvaux.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvauxutils.o: .\cvauxutils.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvauxutils.o .\cvauxutils.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvcalibfilter.o: .\cvcalibfilter.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvcalibfilter.o .\cvcalibfilter.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvcorrespond.o: .\cvcorrespond.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvcorrespond.o .\cvcorrespond.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvcorrimages.o: .\cvcorrimages.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvcorrimages.o .\cvcorrimages.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvcreatehandmask.o: .\cvcreatehandmask.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvcreatehandmask.o .\cvcreatehandmask.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvdpstereo.o: .\cvdpstereo.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvdpstereo.o .\cvdpstereo.cpp
+..\..\_temp\cvaux$(DR)_gcc\cveigenobjects.o: .\cveigenobjects.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cveigenobjects.o .\cveigenobjects.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvepilines.o: .\cvepilines.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvepilines.o .\cvepilines.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvface.o: .\cvface.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvface.o .\cvface.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvfacedetection.o: .\cvfacedetection.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvfacedetection.o .\cvfacedetection.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvfacetemplate.o: .\cvfacetemplate.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvfacetemplate.o .\cvfacetemplate.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvfindface.o: .\cvfindface.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvfindface.o .\cvfindface.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvfindhandregion.o: .\cvfindhandregion.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvfindhandregion.o .\cvfindhandregion.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvhmm.o: .\cvhmm.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvhmm.o .\cvhmm.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvhmm1d.o: .\cvhmm1d.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvhmm1d.o .\cvhmm1d.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvhmmobs.o: .\cvhmmobs.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvhmmobs.o .\cvhmmobs.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlcm.o: .\cvlcm.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlcm.o .\cvlcm.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlee.o: .\cvlee.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlee.o .\cvlee.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlevmar.o: .\cvlevmar.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlevmar.o .\cvlevmar.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlevmarprojbandle.o: .\cvlevmarprojbandle.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlevmarprojbandle.o .\cvlevmarprojbandle.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlevmartrif.o: .\cvlevmartrif.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlevmartrif.o .\cvlevmartrif.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlines.o: .\cvlines.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlines.o .\cvlines.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvlmeds.o: .\cvlmeds.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvlmeds.o .\cvlmeds.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvmorphcontours.o: .\cvmorphcontours.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvmorphcontours.o .\cvmorphcontours.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvmorphing.o: .\cvmorphing.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvmorphing.o .\cvmorphing.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvprewarp.o: .\cvprewarp.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvprewarp.o .\cvprewarp.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvscanlines.o: .\cvscanlines.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvscanlines.o .\cvscanlines.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvsegment.o: .\cvsegment.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvsegment.o .\cvsegment.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvsubdiv2.o: .\cvsubdiv2.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvsubdiv2.o .\cvsubdiv2.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvtexture.o: .\cvtexture.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvtexture.o .\cvtexture.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvtrifocal.o: .\cvtrifocal.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvtrifocal.o .\cvtrifocal.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvvecfacetracking.o: .\cvvecfacetracking.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvvecfacetracking.o .\cvvecfacetracking.cpp
+..\..\_temp\cvaux$(DR)_gcc\cvvideo.o: .\cvvideo.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\cvvideo.o .\cvvideo.cpp
+..\..\_temp\cvaux$(DR)_gcc\precomp.o: .\precomp.cpp ./_cvaux.h ./_cvfacedetection.h ./_cvvectrack.h ./_cvvm.h ./resource.h ../include/cvaux.h ../include/cvaux.hpp
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cvaux$(DR)_gcc\precomp.o .\precomp.cpp

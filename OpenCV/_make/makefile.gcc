@@ -1,0 +1,17 @@
+# GNU C/C++ 3.x or later
+
+ifdef debug
+OPT= debug=1
+else
+OPT= 
+endif
+
+all:
+	mingw32-make -C ..\cxcore\src -f makefile.gcc
+	mingw32-make -C ..\cv\src -f makefile.gcc
+	mingw32-make -C ..\cvaux\src -f makefile.gcc
+	mingw32-make -C ..\otherlibs\highgui -f makefile.gcc
+	mingw32-make -C ..\tests\cxts -f makefile.gcc
+	mingw32-make -C ..\tests\cxcore\src -f makefile.gcc
+	mingw32-make -C ..\tests\trs -f makefile.gcc
+	mingw32-make -C ..\tests\cv\src -f makefile.gcc

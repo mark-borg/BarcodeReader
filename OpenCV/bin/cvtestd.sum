@@ -1,0 +1,1279 @@
++-----------------------------------------------------------------------------+
+|<f>unction  : cvAcc                                                          |
+|<t>est      : Linear Accumulating                                            |
+|<c>lass     : Algorithm                                    00:00:01/00:00:01 |
+|<T>est body : fcaLinAcc                                    line: 330         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-002                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSquareAcc                                                    |
+|<t>est      : Accumulating of Squares                                        |
+|<c>lass     : Algorithm                                    00:00:03/00:00:06 |
+|<T>est body : fcaSqrAcc                                    line: 331         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-002                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMultiplyAcc                                                  |
+|<t>est      : Accumulating of Products                                       |
+|<c>lass     : Algorithm                                    00:00:01/00:00:08 |
+|<T>est body : fcaMultAcc                                   line: 332         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   0.000000e+000                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvRunningAvg                                                   |
+|<t>est      : Running Average                                                |
+|<c>lass     : Algorithm                                    00:00:01/00:00:10 |
+|<T>est body : fcaRunAvg                                    line: 333         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-002                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvApproxPoly                                                   |
+|<t>est      : Contours Approximation                                         |
+|<c>lass     : Algorithm                                    00:00:01/00:00:11 |
+|<T>est body : aApproxPoly                                  line: 370         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aapproxpoly.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowLK                                            |
+|<t>est      : Optical flow (Lucas & Kanade)                                  |
+|<c>lass     : Algorithm                                    00:00:04/00:00:17 |
+|<T>est body : fmaCalcOpticalFlowLK                         line: 297         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowlk.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowHS                                            |
+|<t>est      : Optical flow (Horn & Schunck)                                  |
+|<c>lass     : Algorithm                                    00:00:24/00:00:42 |
+|<T>est body : fmaCalcOpticalFlowHS                         line: 426         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowhs.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCameraCalibration                                            |
+|<t>est      : Camera Calibration Tests                                       |
+|<c>lass     : Algorithm                                    00:00:06/00:00:49 |
+|<T>est body : calibrationTest(0)                           line: 428         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acameracalibration.cpp    |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|Calibration test # 1                                                         +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:05/00:00:57 |
+|<T>est body : foaCamShiftC1R(EPS_8U)                       line: 213         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:05/00:01:03 |
+|<T>est body : foaCamShiftC1R(ITER_8U)                      line: 214         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:05/00:01:09 |
+|<T>est body : foaCamShiftC1R(EPS_ITER_8U)                  line: 215         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:05/00:01:15 |
+|<T>est body : foaCamShiftC1R(EPS_32F)                      line: 217         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:04/00:01:20 |
+|<T>est body : foaCamShiftC1R(ITER_32F)                     line: 218         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                    00:00:05/00:01:26 |
+|<T>est body : foaCamShiftC1R(EPS_ITER_32F)                 line: 219         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCanny                                                        |
+|<t>est      : Canny Edge Detector                                            |
+|<c>lass     : Algorithm                                    00:00:02/00:01:30 |
+|<T>est body : fmaCanny(DEPTH_8U)                           line: 151         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acanny.cpp                |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFindChessBoardCornerGuesses, cvFindCornerSubPix              |
+|<t>est      : Regression test                                                |
+|<c>lass     : Algorithm                                    00:00:03/00:01:35 |
+|<T>est body : chess_corner_test                            line: 312         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\achesscorners.cpp         |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : Condensation Algorithm                                         |
+|<t>est      : State estimation of linear system by means of ConDens Algorithm|
+|<c>lass     : Algorithm                                    00:00:03/00:01:39 |
+|<T>est body : fcaConDens                                   line: 140         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acondens.cpp              |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvStartFindContours, cvFindNextContour, cvEndFindContours, cvDrawContours, cvApproxChains, cvStartReadChainPoints, cvReadChainPoint|
+|<t>est      : Retrieving contours                                            |
+|<c>lass     : Algorithm                                    00:00:11/00:01:51 |
+|<T>est body : contour_retrieving_test                      line: 659         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontours.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCopySeqToArray, cvContourPerimeter                           |
+|<t>est      : Comparing perimeter calculation with etalon algorithm          |
+|<c>lass     : Algorithm                                    00:00:01/00:01:53 |
+|<T>est body : contour_perimeter_test                       line: 660         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontours.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourMoments                                               |
+|<t>est      : Calculating the Contour's moments                              |
+|<c>lass     : Algorithm                                    00:00:02/00:01:55 |
+|<T>est body : aContourMoments(_MOMENTS)                    line: 263         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|error_test_moments =0.845936                                                 +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourArea                                                  |
+|<t>est      : Calculating the Contour's area                                 |
+|<c>lass     : Algorithm                                    00:00:01/00:01:57 |
+|<T>est body : aContourMoments(_AREA)                       line: 264         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|area =1467.000000 error_test_area =0.999225                                  +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourSecArea                                               |
+|<t>est      : Calculating the Contour's section area                         |
+|<c>lass     : Algorithm                                    00:00:03/00:02:00 |
+|<T>est body : aContourMoments(_SEQAREA)                    line: 265         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|sec_area =1460.000000 error_test_seq_area =0.004772                          +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvConvexHullApprox                                             |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                    00:00:02/00:02:03 |
+|<T>est body : fmaConvexHull(APPROX)                        line: 375         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvConvexHull                                                   |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                    00:00:03/00:02:06 |
+|<T>est body : fmaConvexHull(EXACT)                         line: 376         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourConvexHullApprox                                      |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                    00:00:04/00:02:12 |
+|<T>est body : fmaConvexHullContour(APPROX)                 line: 377         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourConvexHull                                            |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                    00:00:03/00:02:17 |
+|<T>est body : fmaConvexHullContour(EXACT)                  line: 378         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCorner                                                       |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                    00:00:03/00:02:21 |
+|<T>est body : fcaCorner                                    line: 270         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acorner.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateContourTree                                            |
+|<t>est      : Binary tree create                                             |
+|<c>lass     : Algorithm                                    00:00:04/00:02:26 |
+|<T>est body : aCreateContourTree                           line: 184         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acreatecontourtree.cpp    |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|Contour's binary tree is created                                             +
+|contour from contour tree is restored rezult= 0.000000                       +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvLaplace                                                      |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:24/00:02:53 |
+|<T>est body : derv_test(LAPLACE_8UC1)                      line: 255         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvLaplace                                                      |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:22/00:03:16 |
+|<T>est body : derv_test(LAPLACE_32FC1)                     line: 256         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSobel                                                        |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:11/00:03:29 |
+|<T>est body : derv_test(SOBEL_8UC1)                        line: 258         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSobel                                                        |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:12/00:03:42 |
+|<T>est body : derv_test(SOBEL_32FC1)                       line: 259         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvScharr                                                       |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:05/00:03:49 |
+|<T>est body : derv_test(SCHARR_8UC1)                       line: 261         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvScharr                                                       |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                    00:00:05/00:03:55 |
+|<T>est body : derv_test(SCHARR_32FC1)                      line: 262         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDistTransform                                                |
+|<t>est      : Measure the deviation of the distance from the euclidean, 3x3 mask|
+|<c>lass     : Algorithm                                    00:00:04/00:04:00 |
+|<T>est body : test_dt(CV_DIST_MASK_3)                      line: 212         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\adistancetransform.cpp    |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDistTransform                                                |
+|<t>est      : Measure the deviation of the distance from the euclidean, 5x5 mask|
+|<c>lass     : Algorithm                                    00:00:04/00:04:05 |
+|<T>est body : test_dt(CV_DIST_MASK_5)                      line: 213         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\adistancetransform.cpp    |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcCovarMatrixEx, cvCalcEigenObjects, cvCalcDecompCoeff, cvEigenDecomposite, cvEigenProjection|
+|<t>est      : Eigen objects functions group test                             |
+|<c>lass     : Algorithm                                    00:00:06/00:04:14 |
+|<T>est body : fmaEigenObjects                              line: 764         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aeigenobjects.cpp         |
+|<R>esult    : Algorithm test has passed successfully                      OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcEMD                                                      |
+|<t>est      : Test for EMD on concrete example                               |
+|<c>lass     : Algorithm                                    00:00:01/00:04:16 |
+|<T>est body : emd_test(EMD_SAMPLE)                         line: 117         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aemd.cpp                  |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitEllipse                                                   |
+|<t>est      : Algorithm test for cvFitEllipse                                |
+|<c>lass     : Algorithm                                    00:00:03/00:04:19 |
+|<T>est body : fmaFitEllipse                                line: 144         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitellipse.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitLine2D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                    00:00:01/00:04:20 |
+|<T>est body : test_lf(LF_FITLINE2D)                        line: 128         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitLine3D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                    00:00:03/00:04:23 |
+|<T>est body : test_lf(LF_FITLINE3D)                        line: 129         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvProject3D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                    00:00:03/00:04:28 |
+|<T>est body : test_lf(LF_PROJECT)                          line: 130         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFloodFill                                                    |
+|<t>est      : Flood Fill 4-connected function test                           |
+|<c>lass     : Algorithm                                    00:00:05/00:04:34 |
+|<T>est body : fmaFloodFill                                 line: 384         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afloodfill.cpp            |
+|<R>esult    : No errors fixed by this test                                OK |
++-----------------------------------------------------------------------------+
+|    Nerr = 0                                                                 +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFloodFill8                                                   |
+|<t>est      : Flood Fill 8-connected function test                           |
+|<c>lass     : Algorithm                                    00:00:05/00:04:41 |
+|<T>est body : fmaFloodFill8                                line: 442         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afloodfill8.cpp           |
+|<R>esult    : No errors fixed by this test                                OK |
++-----------------------------------------------------------------------------+
+|    Nerr = 0                                                                 +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvIntegrateImage                                               |
+|<t>est      : Comparison with simple etalon functions                        |
+|<c>lass     : Algorithm                                    00:00:04/00:04:48 |
+|<T>est body : haar_test                                    line: 249         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahaar.cpp                 |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHistValue_1D, cvGetHistValue_2D, cvGetHistValue_3D, cvGetHistValue_nD, cvQueryHistValue_1D, cvQueryHistValue_2D, cvQueryHistValue_3D, cvQueryHistValue_nD|
+|<t>est      : Histogram Get/Query functions algorithm test                   |
+|<c>lass     : Algorithm                                    00:00:05/00:04:55 |
+|<T>est body : foaHistGetQueryValue(CV_HIST_ARRAY)          line: 1424        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHistValue_1D, cvGetHistValue_2D, cvGetHistValue_3D, cvGetHistValue_nD, cvQueryHistValue_1D, cvQueryHistValue_2D, cvQueryHistValue_3D, cvQueryHistValue_nD|
+|<t>est      : Histogram Get/Query functions algorithm test                   |
+|<c>lass     : Algorithm                                    00:00:09/00:05:05 |
+|<T>est body : foaHistGetQueryValue(CV_HIST_TREE)           line: 1428        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetMinMaxHistValue                                           |
+|<t>est      : Histogram cvGetMinMaxHistValue function algorithm test         |
+|<c>lass     : Algorithm                                    00:00:03/00:05:10 |
+|<T>est body : foaHistMinMaxValue(CV_HIST_ARRAY)            line: 1432        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetMinMaxHistValue                                           |
+|<t>est      : Histogram cvGetMinMaxHistValue function algorithm test         |
+|<c>lass     : Algorithm                                    00:00:08/00:05:20 |
+|<T>est body : foaHistMinMaxValue(CV_HIST_TREE)             line: 1435        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvNormalizeHist                                                |
+|<t>est      : Histogram cvNormalizeHist function algorithm test              |
+|<c>lass     : Algorithm                                    00:00:06/00:05:28 |
+|<T>est body : foaNormalizeHist(CV_HIST_ARRAY)              line: 1439        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvNormalizeHist                                                |
+|<t>est      : Histogram cvNormalizeHist function algorithm test              |
+|<c>lass     : Algorithm                                    00:00:19/00:05:48 |
+|<T>est body : foaNormalizeHist(CV_HIST_TREE)               line: 1442        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshHist                                                   |
+|<t>est      : Histogram cvThreshHist function algorithm test                 |
+|<c>lass     : Algorithm                                    00:00:03/00:05:53 |
+|<T>est body : foaThreshHist(CV_HIST_ARRAY)                 line: 1446        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshHist                                                   |
+|<t>est      : Histogram cvThreshHist function algorithm test                 |
+|<c>lass     : Algorithm                                    00:00:00/00:05:54 |
+|<T>est body : foaThreshHist(CV_HIST_TREE)                  line: 1449        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCompareHist                                                  |
+|<t>est      : Histogram comparing function algorithm test                    |
+|<c>lass     : Algorithm                                    00:00:05/00:06:00 |
+|<T>est body : foaHistCompare(CV_HIST_ARRAY)                line: 1453        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCopyHist                                                     |
+|<t>est      : Histogram copying function algorithm test                      |
+|<c>lass     : Algorithm                                    00:00:03/00:06:04 |
+|<T>est body : foaCopyHist(CV_HIST_ARRAY)                   line: 1460        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHist                                                     |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                    00:00:05/00:06:10 |
+|<T>est body : foaCalcHist(CV_HIST_ARRAY)                   line: 1467        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHist8uC1R                                                |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                    00:00:13/00:06:25 |
+|<T>est body : foaCalcHist(CV_HIST_TREE)                    line: 1470        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHistMask                                                 |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                    00:00:05/00:06:31 |
+|<T>est body : foaCalcHistMask(CV_HIST_ARRAY)               line: 1473        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHistMask8uC1R                                            |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                    00:00:20/00:06:53 |
+|<T>est body : foaCalcHistMask(CV_HIST_TREE)                line: 1476        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProject                                              |
+|<t>est      : Back project calculation function algorithm test               |
+|<c>lass     : Algorithm                                    00:00:05/00:07:01 |
+|<T>est body : foaBackProject(CV_HIST_ARRAY)                line: 1480        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProject                                              |
+|<t>est      : Back project calculation function algorithm test               |
+|<c>lass     : Algorithm                                    00:00:20/00:07:23 |
+|<T>est body : foaBackProject(CV_HIST_TREE)                 line: 1483        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProjectPatch                                         |
+|<t>est      : Back project patch calculation function algorithm test         |
+|<c>lass     : Algorithm                                    00:00:08/00:07:34 |
+|<T>est body : foaBackProjectPatch(CV_HIST_ARRAY)           line: 1487        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProjectPatch                                         |
+|<t>est      : Back project patch calculation function algorithm test         |
+|<c>lass     : Algorithm                                    00:00:17/00:07:55 |
+|<T>est body : foaBackProjectPatch(CV_HIST_TREE)            line: 1490        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBayesianProb                                             |
+|<t>est      : Bayesian Prob calculation function algorithm test              |
+|<c>lass     : Algorithm                                    00:00:01/00:07:56 |
+|<T>est body : foaBayesianProb(CV_HIST_ARRAY)               line: 1494        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransform                                               |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                    00:00:00/00:07:56 |
+|<T>est body : test_ht(HT_STANDARD)                         line: 119         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransformP                                              |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                    00:00:00/00:07:56 |
+|<T>est body : test_ht(HT_PP)                               line: 120         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransformSDiv                                           |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                    00:00:00/00:07:56 |
+|<T>est body : test_ht(HT_MD)                               line: 121         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateImage cvCreateImageHeader cvSetImageROI cvGetImageROI cvSetImageCOI cvCreateImageData cvReleaseImageData cvSetImageData cvCloneImage cvCopyImage cvInitImageHeader|
+|<t>est      : Image Creation & access                                        |
+|<c>lass     : Algorithm                                    00:00:01/00:07:57 |
+|<T>est body : foaImage                                     line: 331         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aimage.cpp                |
+|<R>esult    : Ok                                                          OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : Kalman Filtering                                               |
+|<t>est      : State estimation of linear system by means of Kalman Filtering |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : fcaKalman                                    line: 126         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\akalman.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvAccMask                                                      |
+|<t>est      : Linear Accumulating with Mask                                  |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : fcaLinAcc                                    line: 357         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-005                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSquareAccMask                                                |
+|<t>est      : Accumulating of Squares with Mask                              |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : fcaSqrAcc                                    line: 358         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-005                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMultiplyAccMask                                              |
+|<t>est      : Accumulating of Products with Mask                             |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : fcaMultAcc                                   line: 359         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-005                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvRunningAvgMask                                               |
+|<t>est      : Running Average with Mask                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : fcaRunAvg                                    line: 360         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
+|                                                                             +
+|Accuracy   1.000000e-005                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchContours                                                |
+|<t>est      : Matching Contours                                              |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : aMatchContours                               line: 161         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontoursmatch.cpp        |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|contours matching error_test =0.038562                                       +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchContourTrees                                            |
+|<t>est      : Matching Contour trees                                         |
+|<c>lass     : Algorithm                                    00:00:00/00:07:57 |
+|<T>est body : aMatchContourTrees                           line: 184         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amatchcontourtrees.cpp    |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|contours matching error_test =0.797233                                       +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:58 |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_8U)           line: 392         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:58 |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_NORMED_8U)    line: 393         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:58 |
+|<T>est body : match_templ_test(MTEMPL_CCORR_8U)            line: 394         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:58 |
+|<T>est body : match_templ_test(MTEMPL_CCORR_NORMED_8U)     line: 395         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:01/00:07:59 |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_8U)           line: 396         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:59 |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_NORMED_8U)    line: 397         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:59 |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_32F)          line: 399         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:07:59 |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_NORMED_32F)   line: 400         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:01/00:08:00 |
+|<T>est body : match_templ_test(MTEMPL_CCORR_32F)           line: 401         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:08:00 |
+|<T>est body : match_templ_test(MTEMPL_CCORR_NORMED_32F)    line: 402         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:08:00 |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_32F)          line: 403         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                    00:00:00/00:08:00 |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_NORMED_32F)   line: 404         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:02/00:08:02 |
+|<T>est body : foaMeanShiftC1R(EPS_8U)                      line: 200         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:01/00:08:03 |
+|<T>est body : foaMeanShiftC1R(ITER_8U)                     line: 201         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:02/00:08:05 |
+|<T>est body : foaMeanShiftC1R(EPS_ITER_8U)                 line: 202         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:01/00:08:06 |
+|<T>est body : foaMeanShiftC1R(EPS_32F)                     line: 204         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:01/00:08:07 |
+|<T>est body : foaMeanShiftC1R(ITER_32F)                    line: 205         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                    00:00:02/00:08:09 |
+|<T>est body : foaMeanShiftC1R(EPS_ITER_32F)                line: 206         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMinAreaRect                                                  |
+|<t>est      : MinAreaRect                                                    |
+|<c>lass     : Algorithm                                    00:00:00/00:08:09 |
+|<T>est body : fmaMinAreaRect                               line: 280         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aminarearect.cpp          |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:09 |
+|<T>est body : moments_test(_8U_C1)                         line: 377         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:10 |
+|<T>est body : moments_test(_8U_C3)                         line: 378         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:10 |
+|<T>est body : moments_test(_32F_C1)                        line: 379         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:11 |
+|<T>est body : moments_test(_32F_C3)                        line: 380         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:11 |
+|<T>est body : moments_test(BIN_8U_C1)                      line: 382         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:12 |
+|<T>est body : moments_test(BIN_8U_C3)                      line: 383         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:12 |
+|<T>est body : moments_test(BIN_32F_C1)                     line: 384         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:13 |
+|<T>est body : moments_test(BIN_32F_C3)                     line: 385         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHuMoments                                                 |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:13 |
+|<T>est body : hu_moments_test                              line: 387         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
+|<R>esult    : Accuracy: 4.3311e-019                                       OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:14 |
+|<T>est body : MorphTest(ERODE_8U_C1)                       line: 310         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:14 |
+|<T>est body : MorphTest(ERODE_8U_C3)                       line: 311         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:02/00:08:16 |
+|<T>est body : MorphTest(ERODE_8U_AC4)                      line: 312         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:16 |
+|<T>est body : MorphTest(ERODE_32F_C1)                      line: 313         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:17 |
+|<T>est body : MorphTest(ERODE_32F_C3)                      line: 314         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:18 |
+|<T>est body : MorphTest(ERODE_32F_AC4)                     line: 315         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:19 |
+|<T>est body : MorphTest(DILATE_8U_C1)                      line: 317         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:20 |
+|<T>est body : MorphTest(DILATE_8U_C3)                      line: 318         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:21 |
+|<T>est body : MorphTest(DILATE_8U_AC4)                     line: 319         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:22 |
+|<T>est body : MorphTest(DILATE_32F_C1)                     line: 320         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:23 |
+|<T>est body : MorphTest(DILATE_32F_C3)                     line: 321         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:01/00:08:24 |
+|<T>est body : MorphTest(DILATE_32F_AC4)                    line: 322         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvUpdateMHIByTime                                              |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:24 |
+|<T>est body : update_mhi_by_time_test                      line: 776         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcMotionGradient                                           |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:03/00:08:27 |
+|<T>est body : calc_motion_gradient_test                    line: 777         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcGlobalOrientation                                        |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                    00:00:00/00:08:27 |
+|<T>est body : calc_global_orientation_test                 line: 778         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMinEigenVal                                                  |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                    00:00:00/00:08:27 |
+|<T>est body : fcaMinEVal                                   line: 222         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amineval.cpp              |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowPyrLK                                         |
+|<t>est      : Regression Test for Lucas Kanade pyramid-based optical flow    |
+|<c>lass     : Algorithm                                    00:00:01/00:08:28 |
+|<T>est body : pyrlk_test                                   line: 224         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowpyrlk.cpp         |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                    00:00:00/00:08:28 |
+|<T>est body : foaPixelAccessUCHAR                          line: 89          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                    00:00:00/00:08:28 |
+|<T>est body : foaPixelAccessCHAR                           line: 90          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                    00:00:00/00:08:28 |
+|<T>est body : foaPixelAccessFLOAT                          line: 91          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreatePOSITObject, cvPOSIT, cvReleasePOSITObject             |
+|<t>est      : POSIT algorithm                                                |
+|<c>lass     : Algorithm                                    00:00:00/00:08:28 |
+|<T>est body : fmaPOSIT                                     line: 267         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aposit.cpp                |
+|<R>esult    : No errors fixed for this test                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:01/00:08:29 |
+|<T>est body : PyrUpCmpIPL(_8U_C1)                          line: 457         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:02/00:08:31 |
+|<T>est body : PyrUpCmpIPL(_8U_C3)                          line: 458         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:02/00:08:33 |
+|<T>est body : PyrUpCmpIPL(_32F_C1)                         line: 459         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:03/00:08:36 |
+|<T>est body : PyrUpCmpIPL(_32F_C3)                         line: 460         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:00/00:08:36 |
+|<T>est body : PyrDownCmpIPL(_8U_C1)                        line: 462         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:02/00:08:38 |
+|<T>est body : PyrDownCmpIPL(_8U_C3)                        line: 463         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:00/00:08:38 |
+|<T>est body : PyrDownCmpIPL(_32F_C1)                       line: 464         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                    00:00:02/00:08:40 |
+|<T>est body : PyrDownCmpIPL(_32F_C3)                       line: 465         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:08:41 |
+|<T>est body : line_smp_test(_8U_C1)                        line: 567         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:08:41 |
+|<T>est body : line_smp_test(_8U_C3)                        line: 568         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:08:41 |
+|<T>est body : line_smp_test(_32F_C1)                       line: 569         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:08:41 |
+|<T>est body : line_smp_test(_32F_C3)                       line: 570         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetRectSubPix                                                |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:00/00:08:41 |
+|<T>est body : rect_smp_test(_8U_C1)                        line: 572         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetRectSubPix                                                |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                    00:00:01/00:08:42 |
+|<T>est body : rect_smp_test(_32F_C1)                       line: 573         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSnakeImage                                                   |
+|<t>est      : Snakes regression test                                         |
+|<c>lass     : Algorithm                                    00:00:00/00:08:42 |
+|<T>est body : fmaSnakes(CHECK)                             line: 227         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asnakes.cpp               |
+|<R>esult    : No errors fixed for this text                               OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateSubdiv2D, cvSubdiv2DLocate, cvInitSubdivDelaunay2D, cvSubdivDelaunay2DInsert, cvCalcSubdivVoronoi2D|
+|<t>est      : Calculating Delaunay/Voronoi                                   |
+|<c>lass     : Algorithm                                    00:00:04/00:08:46 |
+|<T>est body : subdiv_test                                  line: 253         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asubdivisions.cpp         |
+|<R>esult    : No errors                                                   OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:46 |
+|<T>est body : foaThreshold(BINARY_8U)                      line: 227         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:46 |
+|<T>est body : foaThreshold(BINARY_INV_8U)                  line: 228         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:01/00:08:47 |
+|<T>est body : foaThreshold(TRUNC_8U)                       line: 229         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:47 |
+|<T>est body : foaThreshold(TOZERO_8U)                      line: 230         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:47 |
+|<T>est body : foaThreshold(TOZERO_INV_8U)                  line: 231         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:47 |
+|<T>est body : foaThreshold(BINARY_32F)                     line: 233         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:48 |
+|<T>est body : foaThreshold(BINARY_INV_32F)                 line: 234         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:48 |
+|<T>est body : foaThreshold(TRUNC_32F)                      line: 235         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:01/00:08:49 |
+|<T>est body : foaThreshold(TOZERO_32F)                     line: 236         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                    00:00:00/00:08:49 |
+|<T>est body : foaThreshold(TOZERO_INV_32F)                 line: 237         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvUnDistort                                                    |
+|<t>est      : Image undistortion function test                               |
+|<c>lass     : Algorithm                                    00:00:01/00:08:50 |
+|<T>est body : fmaUnDistort                                 line: 583         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aundistort.cpp            |
+|<R>esult    : No errors fixed by this test                                OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPreCornerDetect                                              |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                    00:00:01/00:08:51 |
+|<T>est body : fcaPreCorner                                 line: 198         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aprecorner.cpp            |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrSegmentation                                              |
+|<t>est      : Image segmentation by pyramids                                 |
+|<c>lass     : Algorithm                                    00:00:00/00:08:51 |
+|<T>est body : aPyrSegmentation(_8U_C1)                     line: 248         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyrsegmentation.cpp      |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|upper =20.000000 diff =0                                                     +
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrSegmentation                                              |
+|<t>est      : Image segmentation by pyramids                                 |
+|<c>lass     : Algorithm                                    00:00:00/00:08:51 |
+|<T>est body : aPyrSegmentation(_8U_C3)                     line: 249         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyrsegmentation.cpp      |
+|<R>esult    :                                                             OK |
++-----------------------------------------------------------------------------+
+|upper =20.000000 diff =0                                                     +
++-----------------------------------------------------------------------------+

@@ -1,0 +1,149 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "CalibFilter"=..\Filters\CalibFilter\CalibFilter.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CV
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcorelib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ProxyTrans"=..\Filters\ProxyTrans\ProxyTrans.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CV
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcorelib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SyncFilter"=..\Filters\SyncFilter\SyncFilter.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CV
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcorelib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cv"=..\cv\src\cv.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cvcam"=..\otherlibs\cvcam\src\windows\cvcam.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CV
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name HighGUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ProxyTrans
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcorelib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cxcore"=..\cxcore\src\cxcore.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "highgui"=..\otherlibs\highgui\highgui.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

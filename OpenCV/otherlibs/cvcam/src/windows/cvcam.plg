@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cvcam - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"..\..\..\..\_temp\cvcam_dbg/cvcam.res" /d "_DEBUG" "C:\Program Files\OpenCV\otherlibs\cvcam\src\windows\cvcam.rc"" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /I "../../../../cxcore/include" /I "../../include" /I "../../../highgui" /I "../../../../filters\proxytrans" /I "../../../../filters\syncfilter" /D "WIN32" /D "DEBUG" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "CVCAM_EXPORTS" /Fo"..\..\..\..\_temp\cvcam_dbg/" /Fd"..\..\..\..\_temp\cvcam_dbg/" /FD /GZ /c 
+"C:\Program Files\OpenCV\otherlibs\cvcam\src\windows\cvcam.cpp"
+"C:\Program Files\OpenCV\otherlibs\cvcam\src\windows\cvcamavi.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP7C.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+highguid.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib quartz.lib advapi32.lib winmm.lib STRMBASD.LIB /nologo /dll /incremental:yes /pdb:"..\..\..\..\_temp\cvcam_dbg/cvcam096d.pdb" /debug /machine:I386 /nodefaultlib:"libcmtd" /nodefaultlib:"libmmdd.lib" /out:"..\..\..\..\bin\cvcam096d.dll" /implib:"..\..\..\..\lib\cvcamd.lib" /libpath:"../../../../lib" 
+"\Program Files\OpenCV\_temp\cvcam_dbg\cvcam.obj"
+"\Program Files\OpenCV\_temp\cvcam_dbg\cvcamavi.obj"
+"\Program Files\OpenCV\_temp\cvcam_dbg\cvcam.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP7D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+cvcam.cpp
+C:\Program Files\OpenCV\otherlibs\cvcam\src\windows\cvcam.cpp(46) : fatal error C1083: Cannot open include file: 'streams.h': No such file or directory
+cvcamavi.cpp
+C:\Program Files\OpenCV\otherlibs\cvcam\src\windows\cvcamavi.cpp(46) : fatal error C1083: Cannot open include file: 'streams.h': No such file or directory
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+cvcam096d.dll - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

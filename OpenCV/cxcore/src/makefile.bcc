@@ -1,0 +1,129 @@
+# Makefile for Borland C++ >=5.5
+
+CXX = bcc32
+LINK = bcc32
+
+!ifdef debug
+
+SUFFIX = d
+DR = _Dbg
+
+!else
+
+SUFFIX = 
+DR = _Rls
+
+!endif
+
+OUTBIN = ..\..\bin\cxcore096$(SUFFIX).dll
+OUTLIB = ..\..\lib\cxcore$(SUFFIX).lib
+
+OBJS = ..\..\_temp\cxcore$(DR)_bcc\cxalloc.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxarithm.obj ..\..\_temp\cxcore$(DR)_bcc\cxarray.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxcmp.obj ..\..\_temp\cxcore$(DR)_bcc\cxconvert.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxcopy.obj ..\..\_temp\cxcore$(DR)_bcc\cxdatastructs.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxdrawing.obj ..\..\_temp\cxcore$(DR)_bcc\cxdxt.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxerror.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxjacobieigens.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxlogic.obj ..\..\_temp\cxcore$(DR)_bcc\cxmathfuncs.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxmatmul.obj ..\..\_temp\cxcore$(DR)_bcc\cxmatrix.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxmean.obj ..\..\_temp\cxcore$(DR)_bcc\cxmeansdv.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxminmaxloc.obj ..\..\_temp\cxcore$(DR)_bcc\cxnorm.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxouttext.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxpersistence.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxprecomp.obj ..\..\_temp\cxcore$(DR)_bcc\cxrand.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxsumpixels.obj ..\..\_temp\cxcore$(DR)_bcc\cxsvd.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxswitcher.obj ..\..\_temp\cxcore$(DR)_bcc\cxtables.obj \
+..\..\_temp\cxcore$(DR)_bcc\cxutils.obj 
+
+
+
+INC = ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h \
+../include/cxtypes.h ./_cxcore.h ./_cxipp.h 
+
+
+CXXFLAGS2 = -I"../include" -I"." -3 -a8 -b- -c -d -RT- -tWM -w-inl -w-aus -j200 -o 
+LINKFLAGS2 =  -tWD -e$(OUTBIN) 
+
+!ifdef debug
+
+CXXFLAGS = -D"WIN32" -D"CVAPI_EXPORTS" -D"_WINDOWS" -D"_DEBUG" -Od -v $(CXXFLAGS2)
+LIBS = kernel32.lib user32.lib gdi32.lib advapi32.lib 
+LINKFLAGS = $(LINKFLAGS2) 
+
+!else
+
+CXXFLAGS = -D"WIN32" -D"NDEBUG" -D"CVAPI_EXPORTS" -D"_WINDOWS" -O2 $(CXXFLAGS2)
+LIBS = kernel32.lib user32.lib gdi32.lib advapi32.lib 
+LINKFLAGS = $(LINKFLAGS2) 
+
+!endif
+
+
+$(OUTBIN): $(OBJS)
+	-mkdir ..\..\bin 2> nul
+	-mkdir ..\..\lib 2> nul
+	$(LINK) @&&|
+$(LINKFLAGS) $** $(LIBS) 
+|
+	implib $(OUTLIB) $(OUTBIN)
+
+all: $(OUTBIN)
+
+..\..\_temp\cxcore$(DR)_bcc\cxalloc.obj: .\cxalloc.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	@-mkdir ..\..\_temp\cxcore$(DR)_bcc 2>nul
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxalloc.obj .\cxalloc.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxarithm.obj: .\cxarithm.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxarithm.obj .\cxarithm.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxarray.obj: .\cxarray.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxarray.obj .\cxarray.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxcmp.obj: .\cxcmp.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxcmp.obj .\cxcmp.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxconvert.obj: .\cxconvert.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxconvert.obj .\cxconvert.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxcopy.obj: .\cxcopy.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxcopy.obj .\cxcopy.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxdatastructs.obj: .\cxdatastructs.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxdatastructs.obj .\cxdatastructs.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxdrawing.obj: .\cxdrawing.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxdrawing.obj .\cxdrawing.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxdxt.obj: .\cxdxt.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxdxt.obj .\cxdxt.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxerror.obj: .\cxerror.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxerror.obj .\cxerror.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxjacobieigens.obj: .\cxjacobieigens.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxjacobieigens.obj .\cxjacobieigens.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxlogic.obj: .\cxlogic.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxlogic.obj .\cxlogic.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxmathfuncs.obj: .\cxmathfuncs.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxmathfuncs.obj .\cxmathfuncs.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxmatmul.obj: .\cxmatmul.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxmatmul.obj .\cxmatmul.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxmatrix.obj: .\cxmatrix.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxmatrix.obj .\cxmatrix.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxmean.obj: .\cxmean.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxmean.obj .\cxmean.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxmeansdv.obj: .\cxmeansdv.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxmeansdv.obj .\cxmeansdv.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxminmaxloc.obj: .\cxminmaxloc.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxminmaxloc.obj .\cxminmaxloc.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxnorm.obj: .\cxnorm.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxnorm.obj .\cxnorm.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxouttext.obj: .\cxouttext.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxouttext.obj .\cxouttext.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxpersistence.obj: .\cxpersistence.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxpersistence.obj .\cxpersistence.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxprecomp.obj: .\cxprecomp.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxprecomp.obj .\cxprecomp.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxrand.obj: .\cxrand.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxrand.obj .\cxrand.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxsumpixels.obj: .\cxsumpixels.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxsumpixels.obj .\cxsumpixels.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxsvd.obj: .\cxsvd.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxsvd.obj .\cxsvd.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxswitcher.obj: .\cxswitcher.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxswitcher.obj .\cxswitcher.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxtables.obj: .\cxtables.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxtables.obj .\cxtables.cpp
+..\..\_temp\cxcore$(DR)_bcc\cxutils.obj: .\cxutils.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_bcc\cxutils.obj .\cxutils.cpp

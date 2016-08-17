@@ -1,0 +1,205 @@
+# Makefile for Borland C++ >=5.5
+
+CXX = bcc32
+LINK = bcc32
+
+!ifdef debug
+
+SUFFIX = d
+DR = _Dbg
+
+!else
+
+SUFFIX = 
+DR = _Rls
+
+!endif
+
+OUTBIN = ..\..\bin\cv096$(SUFFIX).dll
+OUTLIB = ..\..\lib\cv$(SUFFIX).lib
+
+OBJS = ..\..\_temp\cv$(DR)_bcc\cvadapthresh.obj \
+..\..\_temp\cv$(DR)_bcc\cvcalccontrasthistogram.obj \
+..\..\_temp\cv$(DR)_bcc\cvcanny.obj ..\..\_temp\cv$(DR)_bcc\cvcolor.obj \
+..\..\_temp\cv$(DR)_bcc\cvcontours.obj ..\..\_temp\cv$(DR)_bcc\cvconvolve.obj \
+..\..\_temp\cv$(DR)_bcc\cvcorner.obj ..\..\_temp\cv$(DR)_bcc\cvcornersubpix.obj \
+..\..\_temp\cv$(DR)_bcc\cvderiv.obj ..\..\_temp\cv$(DR)_bcc\cvfeatureselect.obj \
+..\..\_temp\cv$(DR)_bcc\cvfloodfill.obj ..\..\_temp\cv$(DR)_bcc\cvhistogram.obj \
+..\..\_temp\cv$(DR)_bcc\cvimgwarp.obj ..\..\_temp\cv$(DR)_bcc\cvmineval.obj \
+..\..\_temp\cv$(DR)_bcc\cvmoments.obj ..\..\_temp\cv$(DR)_bcc\cvmorph.obj \
+..\..\_temp\cv$(DR)_bcc\cvprecorner.obj ..\..\_temp\cv$(DR)_bcc\cvpyramids.obj \
+..\..\_temp\cv$(DR)_bcc\cvsamplers.obj ..\..\_temp\cv$(DR)_bcc\cvsmooth.obj \
+..\..\_temp\cv$(DR)_bcc\cvtemplmatch.obj ..\..\_temp\cv$(DR)_bcc\cvthresh.obj \
+..\..\_temp\cv$(DR)_bcc\cvapprox.obj ..\..\_temp\cv$(DR)_bcc\cvcontourtree.obj \
+..\..\_temp\cv$(DR)_bcc\cvconvhull.obj ..\..\_temp\cv$(DR)_bcc\cvdistransform.obj \
+..\..\_temp\cv$(DR)_bcc\cvdominants.obj ..\..\_temp\cv$(DR)_bcc\cvemd.obj \
+..\..\_temp\cv$(DR)_bcc\cvgeometry.obj ..\..\_temp\cv$(DR)_bcc\cvhough.obj \
+..\..\_temp\cv$(DR)_bcc\cvlinefit.obj ..\..\_temp\cv$(DR)_bcc\cvmatchcontours.obj \
+..\..\_temp\cv$(DR)_bcc\cvpgh.obj ..\..\_temp\cv$(DR)_bcc\cvpyrsegmentation.obj \
+..\..\_temp\cv$(DR)_bcc\cvrotcalipers.obj ..\..\_temp\cv$(DR)_bcc\cvshapedescr.obj \
+..\..\_temp\cv$(DR)_bcc\cvsubdivision2d.obj ..\..\_temp\cv$(DR)_bcc\cvcamshift.obj \
+..\..\_temp\cv$(DR)_bcc\cvcondens.obj ..\..\_temp\cv$(DR)_bcc\cvkalman.obj \
+..\..\_temp\cv$(DR)_bcc\cvlkpyramid.obj ..\..\_temp\cv$(DR)_bcc\cvmotempl.obj \
+..\..\_temp\cv$(DR)_bcc\cvoptflowbm.obj ..\..\_temp\cv$(DR)_bcc\cvoptflowhs.obj \
+..\..\_temp\cv$(DR)_bcc\cvoptflowlk.obj ..\..\_temp\cv$(DR)_bcc\cvsnakes.obj \
+..\..\_temp\cv$(DR)_bcc\cvcalcimagehomography.obj \
+..\..\_temp\cv$(DR)_bcc\cvcalibinit.obj ..\..\_temp\cv$(DR)_bcc\cvcalibration.obj \
+..\..\_temp\cv$(DR)_bcc\cvfundam.obj ..\..\_temp\cv$(DR)_bcc\cvposit.obj \
+..\..\_temp\cv$(DR)_bcc\cvundistort.obj ..\..\_temp\cv$(DR)_bcc\cvhaar.obj \
+..\..\_temp\cv$(DR)_bcc\cvaccum.obj ..\..\_temp\cv$(DR)_bcc\cvsumpixels.obj \
+..\..\_temp\cv$(DR)_bcc\cvswitcher.obj ..\..\_temp\cv$(DR)_bcc\cvtables.obj \
+..\..\_temp\cv$(DR)_bcc\cvutils.obj ..\..\_temp\cv$(DR)_bcc\cvprecomp.obj 
+
+
+
+INC = ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h \
+./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h 
+
+
+CXXFLAGS2 = -I"../include" -I"../../cxcore/include" -I"." -3 -a8 -b- -c -d -RT- -tWM -w-inl -w-aus -j200 -o 
+LINKFLAGS2 = -L"../../lib"  -tWD -e$(OUTBIN) 
+
+!ifdef debug
+
+CXXFLAGS = -D"WIN32" -D"CVAPI_EXPORTS" -D"_WINDOWS" -D"_DEBUG" -Od -v $(CXXFLAGS2)
+LIBS = kernel32.lib user32.lib gdi32.lib cxcored.lib 
+LINKFLAGS = $(LINKFLAGS2) 
+
+!else
+
+CXXFLAGS = -D"WIN32" -D"NDEBUG" -D"CVAPI_EXPORTS" -D"_WINDOWS" -O2 $(CXXFLAGS2)
+LIBS = kernel32.lib user32.lib gdi32.lib cxcore.lib 
+LINKFLAGS = $(LINKFLAGS2) 
+
+!endif
+
+
+$(OUTBIN): $(OBJS)
+	-mkdir ..\..\bin 2> nul
+	-mkdir ..\..\lib 2> nul
+	$(LINK) @&&|
+$(LINKFLAGS) $** $(LIBS) 
+|
+	implib $(OUTLIB) $(OUTBIN)
+
+all: $(OUTBIN)
+
+..\..\_temp\cv$(DR)_bcc\cvadapthresh.obj: .\cvadapthresh.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	@-mkdir ..\..\_temp\cv$(DR)_bcc 2>nul
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvadapthresh.obj .\cvadapthresh.cpp
+..\..\_temp\cv$(DR)_bcc\cvcalccontrasthistogram.obj: .\cvcalccontrasthistogram.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcalccontrasthistogram.obj .\cvcalccontrasthistogram.cpp
+..\..\_temp\cv$(DR)_bcc\cvcanny.obj: .\cvcanny.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcanny.obj .\cvcanny.cpp
+..\..\_temp\cv$(DR)_bcc\cvcolor.obj: .\cvcolor.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcolor.obj .\cvcolor.cpp
+..\..\_temp\cv$(DR)_bcc\cvcontours.obj: .\cvcontours.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcontours.obj .\cvcontours.cpp
+..\..\_temp\cv$(DR)_bcc\cvconvolve.obj: .\cvconvolve.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvconvolve.obj .\cvconvolve.cpp
+..\..\_temp\cv$(DR)_bcc\cvcorner.obj: .\cvcorner.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcorner.obj .\cvcorner.cpp
+..\..\_temp\cv$(DR)_bcc\cvcornersubpix.obj: .\cvcornersubpix.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcornersubpix.obj .\cvcornersubpix.cpp
+..\..\_temp\cv$(DR)_bcc\cvderiv.obj: .\cvderiv.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvderiv.obj .\cvderiv.cpp
+..\..\_temp\cv$(DR)_bcc\cvfeatureselect.obj: .\cvfeatureselect.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvfeatureselect.obj .\cvfeatureselect.cpp
+..\..\_temp\cv$(DR)_bcc\cvfloodfill.obj: .\cvfloodfill.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvfloodfill.obj .\cvfloodfill.cpp
+..\..\_temp\cv$(DR)_bcc\cvhistogram.obj: .\cvhistogram.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvhistogram.obj .\cvhistogram.cpp
+..\..\_temp\cv$(DR)_bcc\cvimgwarp.obj: .\cvimgwarp.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvimgwarp.obj .\cvimgwarp.cpp
+..\..\_temp\cv$(DR)_bcc\cvmineval.obj: .\cvmineval.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvmineval.obj .\cvmineval.cpp
+..\..\_temp\cv$(DR)_bcc\cvmoments.obj: .\cvmoments.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvmoments.obj .\cvmoments.cpp
+..\..\_temp\cv$(DR)_bcc\cvmorph.obj: .\cvmorph.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvmorph.obj .\cvmorph.cpp
+..\..\_temp\cv$(DR)_bcc\cvprecorner.obj: .\cvprecorner.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvprecorner.obj .\cvprecorner.cpp
+..\..\_temp\cv$(DR)_bcc\cvpyramids.obj: .\cvpyramids.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvpyramids.obj .\cvpyramids.cpp
+..\..\_temp\cv$(DR)_bcc\cvsamplers.obj: .\cvsamplers.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvsamplers.obj .\cvsamplers.cpp
+..\..\_temp\cv$(DR)_bcc\cvsmooth.obj: .\cvsmooth.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvsmooth.obj .\cvsmooth.cpp
+..\..\_temp\cv$(DR)_bcc\cvtemplmatch.obj: .\cvtemplmatch.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvtemplmatch.obj .\cvtemplmatch.cpp
+..\..\_temp\cv$(DR)_bcc\cvthresh.obj: .\cvthresh.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvthresh.obj .\cvthresh.cpp
+..\..\_temp\cv$(DR)_bcc\cvapprox.obj: .\cvapprox.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvapprox.obj .\cvapprox.cpp
+..\..\_temp\cv$(DR)_bcc\cvcontourtree.obj: .\cvcontourtree.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcontourtree.obj .\cvcontourtree.cpp
+..\..\_temp\cv$(DR)_bcc\cvconvhull.obj: .\cvconvhull.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvconvhull.obj .\cvconvhull.cpp
+..\..\_temp\cv$(DR)_bcc\cvdistransform.obj: .\cvdistransform.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvdistransform.obj .\cvdistransform.cpp
+..\..\_temp\cv$(DR)_bcc\cvdominants.obj: .\cvdominants.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvdominants.obj .\cvdominants.cpp
+..\..\_temp\cv$(DR)_bcc\cvemd.obj: .\cvemd.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvemd.obj .\cvemd.cpp
+..\..\_temp\cv$(DR)_bcc\cvgeometry.obj: .\cvgeometry.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvgeometry.obj .\cvgeometry.cpp
+..\..\_temp\cv$(DR)_bcc\cvhough.obj: .\cvhough.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvhough.obj .\cvhough.cpp
+..\..\_temp\cv$(DR)_bcc\cvlinefit.obj: .\cvlinefit.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvlinefit.obj .\cvlinefit.cpp
+..\..\_temp\cv$(DR)_bcc\cvmatchcontours.obj: .\cvmatchcontours.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvmatchcontours.obj .\cvmatchcontours.cpp
+..\..\_temp\cv$(DR)_bcc\cvpgh.obj: .\cvpgh.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvpgh.obj .\cvpgh.cpp
+..\..\_temp\cv$(DR)_bcc\cvpyrsegmentation.obj: .\cvpyrsegmentation.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvpyrsegmentation.obj .\cvpyrsegmentation.cpp
+..\..\_temp\cv$(DR)_bcc\cvrotcalipers.obj: .\cvrotcalipers.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvrotcalipers.obj .\cvrotcalipers.cpp
+..\..\_temp\cv$(DR)_bcc\cvshapedescr.obj: .\cvshapedescr.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvshapedescr.obj .\cvshapedescr.cpp
+..\..\_temp\cv$(DR)_bcc\cvsubdivision2d.obj: .\cvsubdivision2d.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvsubdivision2d.obj .\cvsubdivision2d.cpp
+..\..\_temp\cv$(DR)_bcc\cvcamshift.obj: .\cvcamshift.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcamshift.obj .\cvcamshift.cpp
+..\..\_temp\cv$(DR)_bcc\cvcondens.obj: .\cvcondens.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcondens.obj .\cvcondens.cpp
+..\..\_temp\cv$(DR)_bcc\cvkalman.obj: .\cvkalman.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvkalman.obj .\cvkalman.cpp
+..\..\_temp\cv$(DR)_bcc\cvlkpyramid.obj: .\cvlkpyramid.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvlkpyramid.obj .\cvlkpyramid.cpp
+..\..\_temp\cv$(DR)_bcc\cvmotempl.obj: .\cvmotempl.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvmotempl.obj .\cvmotempl.cpp
+..\..\_temp\cv$(DR)_bcc\cvoptflowbm.obj: .\cvoptflowbm.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvoptflowbm.obj .\cvoptflowbm.cpp
+..\..\_temp\cv$(DR)_bcc\cvoptflowhs.obj: .\cvoptflowhs.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvoptflowhs.obj .\cvoptflowhs.cpp
+..\..\_temp\cv$(DR)_bcc\cvoptflowlk.obj: .\cvoptflowlk.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvoptflowlk.obj .\cvoptflowlk.cpp
+..\..\_temp\cv$(DR)_bcc\cvsnakes.obj: .\cvsnakes.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvsnakes.obj .\cvsnakes.cpp
+..\..\_temp\cv$(DR)_bcc\cvcalcimagehomography.obj: .\cvcalcimagehomography.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcalcimagehomography.obj .\cvcalcimagehomography.cpp
+..\..\_temp\cv$(DR)_bcc\cvcalibinit.obj: .\cvcalibinit.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcalibinit.obj .\cvcalibinit.cpp
+..\..\_temp\cv$(DR)_bcc\cvcalibration.obj: .\cvcalibration.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvcalibration.obj .\cvcalibration.cpp
+..\..\_temp\cv$(DR)_bcc\cvfundam.obj: .\cvfundam.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvfundam.obj .\cvfundam.cpp
+..\..\_temp\cv$(DR)_bcc\cvposit.obj: .\cvposit.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvposit.obj .\cvposit.cpp
+..\..\_temp\cv$(DR)_bcc\cvundistort.obj: .\cvundistort.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvundistort.obj .\cvundistort.cpp
+..\..\_temp\cv$(DR)_bcc\cvhaar.obj: .\cvhaar.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvhaar.obj .\cvhaar.cpp
+..\..\_temp\cv$(DR)_bcc\cvaccum.obj: .\cvaccum.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvaccum.obj .\cvaccum.cpp
+..\..\_temp\cv$(DR)_bcc\cvsumpixels.obj: .\cvsumpixels.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvsumpixels.obj .\cvsumpixels.cpp
+..\..\_temp\cv$(DR)_bcc\cvswitcher.obj: .\cvswitcher.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvswitcher.obj .\cvswitcher.cpp
+..\..\_temp\cv$(DR)_bcc\cvtables.obj: .\cvtables.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvtables.obj .\cvtables.cpp
+..\..\_temp\cv$(DR)_bcc\cvutils.obj: .\cvutils.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvutils.obj .\cvutils.cpp
+..\..\_temp\cv$(DR)_bcc\cvprecomp.obj: .\cvprecomp.cpp ../include/cv.h ../include/cv.hpp ../include/cvcompat.h ../include/cvtypes.h ./_cv.h ./_cvgeom.h ./_cvimgproc.h ./_cvipp.h ./_cvlist.h ./_cvmatrix.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cv$(DR)_bcc\cvprecomp.obj .\cvprecomp.cpp

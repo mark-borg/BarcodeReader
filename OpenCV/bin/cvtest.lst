@@ -1,0 +1,3561 @@
++-----------------------------------------------------------------------------+
+|<f>unction  : cvAcc                                                          |
+|<t>est      : Linear Accumulating                                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaLinAcc                                    line: 330         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [256] > 
+Enter lImageWidth, long, [256] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSquareAcc                                                    |
+|<t>est      : Accumulating of Squares                                        |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaSqrAcc                                    line: 331         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [177] > 
+Enter lImageWidth, long, [177] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMultiplyAcc                                                  |
+|<t>est      : Accumulating of Products                                       |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaMultAcc                                   line: 332         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [177] > 
+Enter lImageWidth, long, [177] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvRunningAvg                                                   |
+|<t>est      : Running Average                                                |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaRunAvg                                    line: 333         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aaccum.cpp                |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [177] > 
+Enter lImageWidth, long, [177] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvApproxPoly                                                   |
+|<t>est      : Contours Approximation                                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aApproxPoly                                  line: 370         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aapproxpoly.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowLK                                            |
+|<t>est      : Optical flow (Lucas & Kanade)                                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaCalcOpticalFlowLK                         line: 297         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowlk.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [563] > 
+Enter lImageWidth, long, [345] > 
+Enter lWinHeight, long, [7] > 
+Enter lWinWidth, long, [9] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowHS                                            |
+|<t>est      : Optical flow (Horn & Schunck)                                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaCalcOpticalFlowHS                         line: 426         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowhs.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [300] > 
+Enter lImageWidth, long, [300] > 
+Enter lambda, float, [20] > 
+usePrevious = 0, criteria = ITER, max_iter = 3
+3 iterations are made
+usePrevious = 0, criteria = EPS, epsilon = 0.001000
+44 iterations are made
+usePrevious = 0,criteria = EPS|ITER,epsilon = 0.000100, max_iter = 3
+3 iterations are made
+usePrevious = 0,criteria = EPS|ITER,epsilon = 0.000010, max_iter = 100
+74 iterations are made
+usePrevious = 1, criteria = ITER, max_iter = 3
+3 iterations are made
+usePrevious = 1, criteria = EPS, epsilon = 0.001000
+41 iterations are made
+usePrevious = 1,criteria = EPS|ITER,epsilon = 0.000100, max_iter = 3
+3 iterations are made
+usePrevious = 1,criteria = EPS|ITER,epsilon = 0.000010, max_iter = 100
+27 iterations are made
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCameraCalibration                                            |
+|<t>est      : Camera Calibration Tests                                       |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : calibrationTest(0)                           line: 428         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acameracalibration.cpp    |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(EPS_8U)                       line: 213         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+Enter height, int, [512] > 
+Enter width, int, [512] > 
+Enter Length, int, [68] > 
+Enter Width, int, [15] > 
+Enter iter, int, [10] > 
+Enter steps, int, [10] > 
+Enter epsilon, float, [1] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(ITER_8U)                      line: 214         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(EPS_ITER_8U)                  line: 215         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(EPS_32F)                      line: 217         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(ITER_32F)                     line: 218         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCamShift                                                     |
+|<t>est      : Calculating CamShift                                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCamShiftC1R(EPS_ITER_32F)                 line: 219         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acamshift.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCanny                                                        |
+|<t>est      : Canny Edge Detector                                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaCanny(DEPTH_8U)                           line: 151         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acanny.cpp                |
++-----------------------------------------------------------------------------+
+Enter lImageWidth, int, [5] > 
+Enter lImageHeight, int, [5] > 
+Enter Sobord, int, [3] > 
+Enter flLow, float, [40] > 
+Enter flHigh, float, [100] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFindChessBoardCornerGuesses, cvFindCornerSubPix              |
+|<t>est      : Regression test                                                |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : chess_corner_test                            line: 312         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\achesscorners.cpp         |
++-----------------------------------------------------------------------------+
+Max rough error is 1.82275, max precise error is 0.0565796
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : Condensation Algorithm                                         |
+|<t>est      : State estimation of linear system by means of ConDens Algorithm|
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaConDens                                   line: 140         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acondens.cpp              |
++-----------------------------------------------------------------------------+
+Enter Dim, int, [7] > 
+Enter Steps, int, [100] > 
+Enter SamplesNum, int, [64] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvStartFindContours, cvFindNextContour, cvEndFindContours, cvDrawContours, cvApproxChains, cvStartReadChainPoints, cvReadChainPoint|
+|<t>est      : Retrieving contours                                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : contour_retrieving_test                      line: 659         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontours.cpp             |
++-----------------------------------------------------------------------------+
+Enter img_size, int, [307] > 
+Enter min_blob_size, int, [1] > 
+Enter max_blob_size, int, [50] > 
+Enter max_contour_size, int, [10000] > 
+Enter blob_count, int, [100] > 
+Enter base_iters, int, [300] > 
+Max err is 0 at iter = 0, seed = c86e7f3f
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCopySeqToArray, cvContourPerimeter                           |
+|<t>est      : Comparing perimeter calculation with etalon algorithm          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : contour_perimeter_test                       line: 660         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontours.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 5.43961e-008 at iter = 289, seed = 0b337db6
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourMoments                                               |
+|<t>est      : Calculating the Contour's moments                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aContourMoments(_MOMENTS)                    line: 263         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
++-----------------------------------------------------------------------------+
+Enter width, int, [128] > 
+Enter height, int, [128] > 
+Enter a2, int, [20] > 
+Enter b2, int, [25] > 
+Enter fi, int, [0] > 
+Enter nPoints2, int, [20] > 
+error_test_moments =0.845936 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourArea                                                  |
+|<t>est      : Calculating the Contour's area                                 |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aContourMoments(_AREA)                       line: 264         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
++-----------------------------------------------------------------------------+
+Enter width, int, [128] > 
+Enter height, int, [128] > 
+Enter a2, int, [20] > 
+Enter b2, int, [25] > 
+Enter fi, int, [0] > 
+Enter nPoints2, int, [20] > 
+area =1467.000000 error_test_area =0.999225 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourSecArea                                               |
+|<t>est      : Calculating the Contour's section area                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aContourMoments(_SEQAREA)                    line: 265         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontourmoments.cpp       |
++-----------------------------------------------------------------------------+
+Enter width, int, [128] > 
+Enter height, int, [128] > 
+Enter a2, int, [20] > 
+Enter b2, int, [25] > 
+Enter fi, int, [0] > 
+Enter nPoints2, int, [20] > 
+Enter n1, int, [0] > 
+Enter n2, int, [19] > 
+sec_area =1460.000000 error_test_seq_area =0.004772 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvConvexHullApprox                                             |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaConvexHull(APPROX)                        line: 375         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
++-----------------------------------------------------------------------------+
+Enter lNumPoints, long, [4096] > 
+Enter lLoopsProp, long, [100] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvConvexHull                                                   |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaConvexHull(EXACT)                         line: 376         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourConvexHullApprox                                      |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaConvexHullContour(APPROX)                 line: 377         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
++-----------------------------------------------------------------------------+
+Enter lNumPoints, long, [4096] > 
+Enter lLoopsProp, long, [100] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvContourConvexHull                                            |
+|<t>est      : Convex hull                                                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaConvexHullContour(EXACT)                  line: 378         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aconvhull.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCorner                                                       |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaCorner                                    line: 270         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acorner.cpp               |
++-----------------------------------------------------------------------------+
+Select data_types, u/s/f/a, [a] > 
+Enter lImageHeight, int, [30] > 
+Enter lImageWidth, int, [30] > 
+Enter kerSize, int, [5] > 
+Enter lBlockSize, int, [5] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateContourTree                                            |
+|<t>est      : Binary tree create                                             |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aCreateContourTree                           line: 184         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acreatecontourtree.cpp    |
++-----------------------------------------------------------------------------+
+Enter nPoints1, int, [20] > 
+Enter a1, int, [10] > 
+Enter b1, int, [20] > 
+Enter fi, int, [0] > 
+Contour's binary tree is created 
+contour from contour tree is restored rezult= 0.000000 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvLaplace                                                      |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(LAPLACE_8UC1)                      line: 255         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Enter min_img_size, int, [1] > 
+Enter max_img_size, int, [300] > 
+Enter base_iters, int, [100] > 
+Max err is 0 at iter = 0, seed = e6624efb
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvLaplace                                                      |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(LAPLACE_32FC1)                     line: 256         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Max err is 6.10352e-005 at iter = 2, seed = 25ce287e
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSobel                                                        |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(SOBEL_8UC1)                        line: 258         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Max err is 0 at iter = 0, seed = 4b0ca93e
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSobel                                                        |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(SOBEL_32FC1)                       line: 259         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Max err is 0.000244141 at iter = 11, seed = b5179e7f
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvScharr                                                       |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(SCHARR_8UC1)                       line: 261         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Max err is 0 at iter = 0, seed = 4149a9d7
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvScharr                                                       |
+|<t>est      : Test for absolute difference functions                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : derv_test(SCHARR_32FC1)                      line: 262         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asobel.cpp                |
++-----------------------------------------------------------------------------+
+Max err is 1.90735e-006 at iter = 2, seed = 5634c9ce
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDistTransform                                                |
+|<t>est      : Measure the deviation of the distance from the euclidean, 3x3 mask|
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_dt(CV_DIST_MASK_3)                      line: 212         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\adistancetransform.cpp    |
++-----------------------------------------------------------------------------+
+Select RoiWidth, r/e, [r] > 
+Select fpGen, r/d, [r] > 
+Image size: 100x100
+Maximum deviation from the Euclidean distance: -0.809967
+x = 53, y = 94
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDistTransform                                                |
+|<t>est      : Measure the deviation of the distance from the euclidean, 5x5 mask|
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_dt(CV_DIST_MASK_5)                      line: 213         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\adistancetransform.cpp    |
++-----------------------------------------------------------------------------+
+Select RoiWidth, r/e, [r] > 
+Select fpGen, r/d, [r] > 
+Image size: 100x100
+Maximum deviation from the Euclidean distance: 0.371109
+x = 52, y = 98
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcCovarMatrixEx, cvCalcEigenObjects, cvCalcDecompCoeff, cvEigenDecomposite, cvEigenProjection|
+|<t>est      : Eigen objects functions group test                             |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaEigenObjects                              line: 764         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aeigenobjects.cpp         |
++-----------------------------------------------------------------------------+
+Enter obj_width, int, [100] > 
+Enter obj_height, int, [100] > 
+Enter obj_number, int, [11] > 
+Enter rel_bufSize, double, [0.09] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcEMD                                                      |
+|<t>est      : Test for EMD on concrete example                               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : emd_test(EMD_SAMPLE)                         line: 117         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aemd.cpp                  |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitEllipse                                                   |
+|<t>est      : Algorithm test for cvFitEllipse                                |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaFitEllipse                                line: 144         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitellipse.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitLine2D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_lf(LF_FITLINE2D)                        line: 128         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFitLine3D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_lf(LF_FITLINE3D)                        line: 129         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvProject3D                                                    |
+|<t>est      : Run the line fitting and projection functions                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_lf(LF_PROJECT)                          line: 130         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afitlines.cpp             |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFloodFill                                                    |
+|<t>est      : Flood Fill 4-connected function test                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaFloodFill                                 line: 384         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afloodfill.cpp            |
++-----------------------------------------------------------------------------+
+Enter nx, int, [64] > 
+Enter stepX, int, [16] > 
+Enter numTest, int, [32] > 
+Enter ROI_offset, int, [0] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvFloodFill8                                                   |
+|<t>est      : Flood Fill 8-connected function test                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaFloodFill8                                line: 442         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\afloodfill8.cpp           |
++-----------------------------------------------------------------------------+
+Enter nx, int, [64] > 
+Enter stepX, int, [16] > 
+Enter numTest, int, [32] > 
+Enter ROI_offset, int, [0] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvIntegrateImage                                               |
+|<t>est      : Comparison with simple etalon functions                        |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : haar_test                                    line: 249         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahaar.cpp                 |
++-----------------------------------------------------------------------------+
+Enter min_img_size, int, [10] > 
+Enter max_img_size, int, [300] > 
+Enter base_iters, int, [50] > 
+cpe: 103.583
+cpe: 91.802
+cpe: 27.1725
+cpe: 81.4078
+cpe: 76.2131
+cpe: 103.969
+cpe: 100.28
+cpe: 34.4619
+cpe: 85.6219
+cpe: 26.8225
+cpe: 105.808
+cpe: 67.0927
+cpe: 25.2834
+cpe: 86.6156
+cpe: 101.413
+cpe: 94.3018
+cpe: 22.383
+cpe: 63.0709
+cpe: 106.021
+cpe: 25.42
+cpe: 69.8074
+cpe: 101.293
+cpe: 76.9852
+cpe: 102.241
+cpe: 68.749
+cpe: 79.1572
+cpe: 68.3536
+cpe: 102.174
+cpe: 40.0582
+cpe: 26.3919
+cpe: 95.4648
+cpe: 21.9006
+cpe: 106.546
+cpe: 26.62
+cpe: 87.0216
+cpe: 101.327
+cpe: 103.164
+cpe: 82.1075
+cpe: 28.8275
+cpe: 103.656
+cpe: 106.225
+cpe: 102.576
+cpe: 100.363
+cpe: 76.0818
+cpe: 31.698
+cpe: 105.077
+cpe: 28.108
+cpe: 74.398
+cpe: 33.6077
+cpe: 77.8883
+Max err is 0 at iter = 0, seed = ddfc5d6f
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHistValue_1D, cvGetHistValue_2D, cvGetHistValue_3D, cvGetHistValue_nD, cvQueryHistValue_1D, cvQueryHistValue_2D, cvQueryHistValue_3D, cvQueryHistValue_nD|
+|<t>est      : Histogram Get/Query functions algorithm test                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaHistGetQueryValue(CV_HIST_ARRAY)          line: 1424        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHistValue_1D, cvGetHistValue_2D, cvGetHistValue_3D, cvGetHistValue_nD, cvQueryHistValue_1D, cvQueryHistValue_2D, cvQueryHistValue_3D, cvQueryHistValue_nD|
+|<t>est      : Histogram Get/Query functions algorithm test                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaHistGetQueryValue(CV_HIST_TREE)           line: 1428        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetMinMaxHistValue                                           |
+|<t>est      : Histogram cvGetMinMaxHistValue function algorithm test         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaHistMinMaxValue(CV_HIST_ARRAY)            line: 1432        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Dimension 1
+Dimension 2
+Dimension 3
+Dimension 4
+Dimension 5
+Dimension 6
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetMinMaxHistValue                                           |
+|<t>est      : Histogram cvGetMinMaxHistValue function algorithm test         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaHistMinMaxValue(CV_HIST_TREE)             line: 1435        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Dimension 1
+Dimension 2
+Dimension 3
+Dimension 4
+Dimension 5
+Dimension 6
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvNormalizeHist                                                |
+|<t>est      : Histogram cvNormalizeHist function algorithm test              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaNormalizeHist(CV_HIST_ARRAY)              line: 1439        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter thresh, float, [0.000001] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvNormalizeHist                                                |
+|<t>est      : Histogram cvNormalizeHist function algorithm test              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaNormalizeHist(CV_HIST_TREE)               line: 1442        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshHist                                                   |
+|<t>est      : Histogram cvThreshHist function algorithm test                 |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshHist(CV_HIST_ARRAY)                 line: 1446        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [1] > 
+Enter dims, int, [10] > 
+Enter thresh, float, [50] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshHist                                                   |
+|<t>est      : Histogram cvThreshHist function algorithm test                 |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshHist(CV_HIST_TREE)                  line: 1449        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCompareHist                                                  |
+|<t>est      : Histogram comparing function algorithm test                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaHistCompare(CV_HIST_ARRAY)                line: 1453        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter thresh, float, [0.0001] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCopyHist                                                     |
+|<t>est      : Histogram copying function algorithm test                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCopyHist(CV_HIST_ARRAY)                   line: 1460        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter thresh, float, [0.00001] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHist                                                     |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCalcHist(CV_HIST_ARRAY)                   line: 1467        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter width, int, [160] > 
+Enter height, int, [160] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHist8uC1R                                                |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCalcHist(CV_HIST_TREE)                    line: 1470        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHistMask                                                 |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCalcHistMask(CV_HIST_ARRAY)               line: 1473        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter width, int, [16] > 
+Enter height, int, [16] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcHistMask8uC1R                                            |
+|<t>est      : Histogram calculation function algorithm test                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaCalcHistMask(CV_HIST_TREE)                line: 1476        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProject                                              |
+|<t>est      : Back project calculation function algorithm test               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaBackProject(CV_HIST_ARRAY)                line: 1480        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [6] > 
+Enter dims, int, [10] > 
+Enter width, int, [16] > 
+Enter height, int, [16] > 
+Dimension 1
+Dimension 2
+Dimension 3
+Dimension 4
+Dimension 5
+Dimension 6
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProject                                              |
+|<t>est      : Back project calculation function algorithm test               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaBackProject(CV_HIST_TREE)                 line: 1483        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Dimension 1
+Dimension 2
+Dimension 3
+Dimension 4
+Dimension 5
+Dimension 6
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProjectPatch                                         |
+|<t>est      : Back project patch calculation function algorithm test         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaBackProjectPatch(CV_HIST_ARRAY)           line: 1487        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [4] > 
+Enter dims, int, [10] > 
+Enter width, int, [16] > 
+Enter height, int, [16] > 
+Enter range_width, int, [3] > 
+Enter range_height, int, [3] > 
+Dimension 1
+No errors detected for this test
+No errors detected for this test
+Dimension 2
+No errors detected for this test
+No errors detected for this test
+Dimension 3
+No errors detected for this test
+No errors detected for this test
+Dimension 4
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBackProjectPatch                                         |
+|<t>est      : Back project patch calculation function algorithm test         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaBackProjectPatch(CV_HIST_TREE)            line: 1490        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Dimension 1
+No errors detected for this test
+No errors detected for this test
+Dimension 2
+No errors detected for this test
+No errors detected for this test
+Dimension 3
+No errors detected for this test
+No errors detected for this test
+Dimension 4
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcBayesianProb                                             |
+|<t>est      : Bayesian Prob calculation function algorithm test              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaBayesianProb(CV_HIST_ARRAY)               line: 1494        |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahistograms.cpp           |
++-----------------------------------------------------------------------------+
+Enter c_dimss, int, [5] > 
+Enter dims, int, [10] > 
+Enter acc, double, [0.01] > 
+seed = -809287112
+Dimension 1
+Dimension 2
+Dimension 3
+Dimension 4
+Dimension 5
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransform                                               |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_ht(HT_STANDARD)                         line: 119         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransformP                                              |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_ht(HT_PP)                               line: 120         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvHoughTransformSDiv                                           |
+|<t>est      : Run the hough transform function                               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : test_ht(HT_MD)                               line: 121         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ahoughtransform.cpp       |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateImage cvCreateImageHeader cvSetImageROI cvGetImageROI cvSetImageCOI cvCreateImageData cvReleaseImageData cvSetImageData cvCloneImage cvCopyImage cvInitImageHeader|
+|<t>est      : Image Creation & access                                        |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaImage                                     line: 331         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aimage.cpp                |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : Kalman Filtering                                               |
+|<t>est      : State estimation of linear system by means of Kalman Filtering |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaKalman                                    line: 126         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\akalman.cpp               |
++-----------------------------------------------------------------------------+
+Enter Dim, int, [7] > 
+Enter Steps, int, [100] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvAccMask                                                      |
+|<t>est      : Linear Accumulating with Mask                                  |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaLinAcc                                    line: 357         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [4] > 
+Enter lImageWidth, long, [4] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSquareAccMask                                                |
+|<t>est      : Accumulating of Squares with Mask                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaSqrAcc                                    line: 358         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [80] > 
+Enter lImageWidth, long, [80] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMultiplyAccMask                                              |
+|<t>est      : Accumulating of Products with Mask                             |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaMultAcc                                   line: 359         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [80] > 
+Enter lImageWidth, long, [80] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvRunningAvgMask                                               |
+|<t>est      : Running Average with Mask                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaRunAvg                                    line: 360         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amaskaccum.cpp            |
++-----------------------------------------------------------------------------+
+Enter lImageHeight, long, [80] > 
+Enter lImageWidth, long, [80] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchContours                                                |
+|<t>est      : Matching Contours                                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aMatchContours                               line: 161         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\acontoursmatch.cpp        |
++-----------------------------------------------------------------------------+
+Enter nPoints1, int, [20] > 
+Enter nPoints2, int, [20] > 
+Enter a1, int, [10] > 
+Enter b1, int, [20] > 
+Enter a2, int, [15] > 
+Enter b2, int, [30] > 
+Enter fi, int, [0] > 
+contours matching error_test =0.038562 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchContourTrees                                            |
+|<t>est      : Matching Contour trees                                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aMatchContourTrees                           line: 184         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amatchcontourtrees.cpp    |
++-----------------------------------------------------------------------------+
+Enter nPoints1, int, [20] > 
+Enter nPoints2, int, [20] > 
+Enter a1, int, [10] > 
+Enter b1, int, [20] > 
+Enter a2, int, [15] > 
+Enter b2, int, [30] > 
+Enter fi, int, [0] > 
+Enter upper, double, [3] > 
+contours matching error_test =0.797233 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_8U)           line: 392         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Select data_types, a/8u/32f, [a] > 
+Select method, a/sd/sdn/cr/crn/cf/cfn, [a] > 
+Enter min_img_size, int, [3] > 
+Enter max_img_size, int, [32] > 
+Select img_size_delta_type, a/m, [m] > 
+Enter img_size_delta, int, [3] > 
+Enter min_templ_size, int, [1] > 
+Select templ_size_delta_type, a/m, [a] > 
+Enter templ_size_delta, int, [3] > 
+Enter base_iters, int, [1000] > 
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 3641088b
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_NORMED_8U)    line: 393         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 4e3208aa
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCORR_8U)            line: 394         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 2845dbcf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCORR_NORMED_8U)     line: 395         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 00e8ab9e
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_8U)           line: 396         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 1.45519e-011 at w = 3, h = 3, tw = 1, th = 1, iter = 3, seed = d7dd7ebe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_NORMED_8U)    line: 397         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0.000122059 at w = 3, h = 3, tw = 1, th = 1, iter = 4, seed = b3aadcff
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_32F)          line: 399         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 93deaafe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_SQDIFF_NORMED_32F)   line: 400         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 6c87b9bf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCORR_32F)           line: 401         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 450f3fd6
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCORR_NORMED_32F)    line: 402         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, tw = 0, th = 0, iter = 0, seed = 1a8dddfb
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_32F)          line: 403         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 3.63798e-012 at w = 9, h = 3, tw = 1, th = 1, iter = 16, seed = f30f2aff
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMatchTemplate                                                |
+|<t>est      : Test for template matching functions                           |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : match_templ_test(MTEMPL_CCOEFF_NORMED_32F)   line: 404         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\atemplmatch.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 3.05166e-005 at w = 27, h = 3, tw = 1, th = 1, iter = 35, seed = cd560e96
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(EPS_8U)                      line: 200         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+Enter height, int, [512] > 
+Enter width, int, [512] > 
+Enter Length, int, [68] > 
+Enter Width, int, [15] > 
+Enter iter, int, [10] > 
+Enter steps, int, [10] > 
+Enter epsilon, float, [1] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(ITER_8U)                     line: 201         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(EPS_ITER_8U)                 line: 202         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(EPS_32F)                     line: 204         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(ITER_32F)                    line: 205         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMeanShift8uC1R                                               |
+|<t>est      : Calculating MeanShift                                          |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaMeanShiftC1R(EPS_ITER_32F)                line: 206         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\ameanshift.cpp            |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMinAreaRect                                                  |
+|<t>est      : MinAreaRect                                                    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaMinAreaRect                               line: 280         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aminarearect.cpp          |
++-----------------------------------------------------------------------------+
+Enter lNumPoints, long, [50] > 
+Enter lLoopsProp, long, [50] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(_8U_C1)                         line: 377         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Select func, a/m/mb, [a] > 
+Select data_types, a/8u/32f, [a] > 
+Select channels, a/1/3, [a] > 
+Enter min_img_size, int, [1] > 
+Enter max_img_size, int, [1000] > 
+Select img_size_delta_type, a/m, [m] > 
+Enter img_size_delta, int, [3] > 
+Enter base_iters, int, [100] > 
+Max err is 1.7985e-015 at w = 729, h = 729, iter = 0, c = 1, seed = 9ab24afe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(_8U_C3)                         line: 378         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 1.38015e-015 at w = 243, h = 729, iter = 0, c = 1, seed = ac542dbb
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(_32F_C1)                        line: 379         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 8.28413e-016 at w = 243, h = 243, iter = 0, c = 1, seed = b6870d9e
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(_32F_C3)                        line: 380         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 1.54091e-015 at w = 3, h = 729, iter = 0, c = 3, seed = 9a082bdf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(BIN_8U_C1)                      line: 382         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 1.20413e-013 at w = 1, h = 729, iter = 0, c = 1, seed = a741debe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(BIN_8U_C3)                      line: 383         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 5.01292e-013 at w = 1, h = 729, iter = 0, c = 3, seed = 8a9caabf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(BIN_32F_C1)                     line: 384         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 1.60356e-013 at w = 1, h = 729, iter = 0, c = 1, seed = 9c692ce6
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMoments                                                      |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : moments_test(BIN_32F_C3)                     line: 385         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+Max err is 2.03089e-013 at w = 1, h = 729, iter = 0, c = 2, seed = 7fc31db3
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetHuMoments                                                 |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : hu_moments_test                              line: 387         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amoments.cpp              |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_8U_C1)                       line: 310         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Select morph_op, a/e/d, [a] > 
+Select data_types, a/8u/32f, [a] > 
+Select channels, a/1/3/4, [a] > 
+Enter min_img_size, int, [1] > 
+Enter max_img_size, int, [37] > 
+Select img_size_delta_type, a/m, [m] > 
+Enter img_size_delta, int, [3] > 
+Enter min_el_size, int, [1] > 
+Enter max_el_size, int, [10] > 
+Select el_size_delta_type, a/m, [a] > 
+Enter el_size_delta, int, [1] > 
+Enter base_iters, int, [100] > 
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_8U_C3)                       line: 311         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_8U_AC4)                      line: 312         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_32F_C1)                      line: 313         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_32F_C3)                      line: 314         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvErode                                                        |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(ERODE_32F_AC4)                     line: 315         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_8U_C1)                      line: 317         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_8U_C3)                      line: 318         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_8U_AC4)                     line: 319         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_32F_C1)                     line: 320         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_32F_C3)                     line: 321         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvDilate                                                       |
+|<t>est      : Comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : MorphTest(DILATE_32F_AC4)                    line: 322         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amorphology.cpp           |
++-----------------------------------------------------------------------------+
+Max err is 0 at w = 0, h = 0, cols = 0, rows = 0, ax = 0, ay = 0, iter = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvUpdateMHIByTime                                              |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : update_mhi_by_time_test                      line: 776         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
++-----------------------------------------------------------------------------+
+Enter min_img_size, int, [6] > 
+Enter max_img_size, int, [31] > 
+Select img_size_delta_type, a/m, [a] > 
+Enter img_size_delta, int, [3] > 
+Enter base_iters, int, [1000] > 
+Max err is 0 at w = 0, h = 0, iter = 0, seed = 3d4b3bfe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcMotionGradient                                           |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : calc_motion_gradient_test                    line: 777         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
++-----------------------------------------------------------------------------+
+Max orient err is 0.139694, Max mask err is 0 at w = 15, h = 6, iter = 6, aperture_size = 3, seed = 2ea1b8ff
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcGlobalOrientation                                        |
+|<t>est      : comparing with the simple algorithm                            |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : calc_global_orientation_test                 line: 778         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amotiontemplates.cpp      |
++-----------------------------------------------------------------------------+
+Max orient err is 0.9245 at w = 6, h = 6, iter = 164, seed = d4d84dfe
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvMinEigenVal                                                  |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaMinEVal                                   line: 222         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\amineval.cpp              |
++-----------------------------------------------------------------------------+
+Select data_types, u/s/f/a, [a] > 
+Enter lImageHeight, int, [30] > 
+Enter lImageWidth, int, [30] > 
+Enter kerSize, int, [5] > 
+Enter lBlockSize, int, [5] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCalcOpticalFlowPyrLK                                         |
+|<t>est      : Regression Test for Lucas Kanade pyramid-based optical flow    |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : pyrlk_test                                   line: 224         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aoptflowpyrlk.cpp         |
++-----------------------------------------------------------------------------+
+Avg.err is 0.0546459, max. err is 0.192911 at i = 308, poor pts = 0,superflous = 56, deficient = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaPixelAccessUCHAR                          line: 89          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaPixelAccessCHAR                           line: 90          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : PixelAccess                                                    |
+|<t>est      : PixelAccess Algorithm Test                                     |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaPixelAccessFLOAT                          line: 91          |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apixelaccess.cpp          |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreatePOSITObject, cvPOSIT, cvReleasePOSITObject             |
+|<t>est      : POSIT algorithm                                                |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaPOSIT                                     line: 267         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aposit.cpp                |
++-----------------------------------------------------------------------------+
+Enter flFocalLength, float, [760] > 
+Enter flEpsilon, float, [0.1] > 
+ True rotation matrix:
+ -0.321279 0.863411 0.388975
+ 0.938256 0.345867 0.007243
+ -0.128280 0.367285 -0.921220
+ True translation vector:
+ 210.302139 -49.791512 1236.935913 
+  Rotation matrix:
+ -0.321189 0.863450 0.388961
+ 0.938224 0.345952 0.007287
+ -0.128270 0.367273 -0.921226
+ Translation vector:
+ 210.356735 -49.804436 1237.256958 
+  True rotation matrix:
+ 0.350767 0.712149 0.608118
+ 0.745716 0.180387 -0.641380
+ -0.566454 0.678458 -0.467787
+ True translation vector:
+ -746.276245 821.962646 1144.975098 
+  Rotation matrix:
+ 0.355374 0.712205 0.605370
+ 0.746710 0.185064 -0.638886
+ -0.567050 0.679079 -0.466044
+ Translation vector:
+ -750.155029 826.234802 1150.926147 
+  True rotation matrix:
+ 0.331586 0.939593 0.084940
+ -0.204235 0.159390 -0.965859
+ -0.921053 0.302918 0.244750
+ True translation vector:
+ -50.810833 -16.855982 62.177189 
+  Rotation matrix:
+ 0.331670 0.939579 0.084772
+ -0.204142 0.159495 -0.965861
+ -0.921023 0.303041 0.244707
+ Translation vector:
+ -50.802773 -16.853308 62.167324 
+  True rotation matrix:
+ 0.502864 0.036319 -0.863602
+ -0.731527 0.550092 -0.402824
+ 0.460431 0.834314 0.303190
+ True translation vector:
+ -532.997498 -693.091064 699.624634 
+  Rotation matrix:
+ 0.500109 0.035375 -0.865239
+ -0.731968 0.547399 -0.405681
+ 0.459280 0.836212 0.299653
+ Translation vector:
+ -531.777832 -691.505005 698.023621 
+  True rotation matrix:
+ 0.705589 -0.142255 -0.694195
+ -0.159242 -0.986418 0.040281
+ -0.690497 0.082123 -0.718659
+ True translation vector:
+ 180.194061 189.759018 885.352966 
+  Rotation matrix:
+ 0.705821 -0.142272 -0.693956
+ -0.159013 -0.986444 0.040540
+ -0.690316 0.081734 -0.718876
+ Translation vector:
+ 180.194153 189.759125 885.353333 
+  True rotation matrix:
+ 0.494935 0.158106 0.854425
+ -0.550890 -0.703341 0.449258
+ 0.671982 -0.693047 -0.261009
+ True translation vector:
+ -497.127411 120.852531 561.141418 
+  Rotation matrix:
+ 0.495248 0.158476 0.854175
+ -0.551163 -0.703425 0.448790
+ 0.671971 -0.693052 -0.261024
+ Translation vector:
+ -496.549164 120.711960 560.488708 
+  True rotation matrix:
+ -0.322020 0.040440 0.945869
+ 0.892112 -0.321486 0.317463
+ 0.316922 0.946050 0.067448
+ True translation vector:
+ 366.111908 220.731049 486.886200 
+  Rotation matrix:
+ -0.322911 0.039184 0.945618
+ 0.891975 -0.322355 0.316966
+ 0.317244 0.945819 0.069141
+ Translation vector:
+ 366.317657 220.855087 487.159790 
+  True rotation matrix:
+ -0.865884 0.218577 0.449967
+ -0.116073 -0.962729 0.244294
+ 0.486593 0.159301 0.858982
+ True translation vector:
+ -19.009731 -132.685638 250.660721 
+  Rotation matrix:
+ -0.865888 0.218677 0.449908
+ -0.116100 -0.962792 0.244032
+ 0.486532 0.159070 0.859059
+ Translation vector:
+ -19.017263 -132.738220 250.760040 
+  True rotation matrix:
+ 0.046522 0.246770 -0.967957
+ -0.500432 0.844395 0.191217
+ 0.864525 0.475501 0.162774
+ True translation vector:
+ 1280.348877 1287.820923 1288.607422 
+  Rotation matrix:
+ 0.047520 0.239147 -0.969820
+ -0.503425 0.841101 0.197772
+ 0.863012 0.478833 0.160361
+ Translation vector:
+ 1289.658813 1297.185059 1297.977295 
+  True rotation matrix:
+ 0.079339 0.776140 -0.625549
+ -0.801520 -0.323431 -0.502950
+ -0.592681 0.541294 0.596431
+ True translation vector:
+ 326.521667 -457.183075 479.975586 
+  Rotation matrix:
+ 0.079663 0.778211 -0.622930
+ -0.799606 -0.327055 -0.503651
+ -0.595679 0.538221 0.596208
+ Translation vector:
+ 325.722717 -456.064423 478.801147 
+  True rotation matrix:
+ -0.368903 0.749514 -0.549672
+ 0.808570 -0.032871 -0.587480
+ -0.458393 -0.661172 -0.593908
+ True translation vector:
+ -121.032677 103.188530 123.198341 
+  Rotation matrix:
+ -0.473772 0.744359 -0.470605
+ 0.853291 -0.132486 -0.504324
+ -0.437746 -0.640498 -0.572387
+ Translation vector:
+ -103.258759 88.035072 105.106384 
+  True rotation matrix:
+ 0.122048 -0.075223 -0.989670
+ 0.916348 -0.374554 0.141475
+ -0.381327 -0.924149 0.023217
+ True translation vector:
+ 717.728027 481.502258 1062.951172 
+  Rotation matrix:
+ 0.123315 -0.069943 -0.989900
+ 0.917623 -0.371139 0.142213
+ -0.377337 -0.925891 0.018415
+ Translation vector:
+ 718.340576 481.913208 1063.858398 
+  True rotation matrix:
+ -0.010892 0.276610 -0.960921
+ 0.998328 -0.051555 -0.026157
+ -0.056776 -0.959598 -0.275585
+ True translation vector:
+ -61.656399 658.749939 733.319519 
+  Rotation matrix:
+ -0.011293 0.276606 -0.960917
+ 0.998350 -0.051349 -0.025691
+ -0.056449 -0.959622 -0.275570
+ Translation vector:
+ -61.526558 657.362671 731.775208 
+  True rotation matrix:
+ -0.631618 0.453149 -0.629058
+ -0.490442 0.394865 0.776883
+ 0.600437 0.799210 -0.027161
+ True translation vector:
+ 286.779053 132.971191 610.148010 
+  Rotation matrix:
+ -0.632559 0.453312 -0.627995
+ -0.491433 0.395318 0.776026
+ 0.600040 0.799500 -0.027290
+ Translation vector:
+ 286.285400 132.742294 609.097656 
+  True rotation matrix:
+ -0.373359 0.524586 -0.765123
+ -0.536910 -0.794784 -0.282926
+ -0.756526 0.305169 0.578395
+ True translation vector:
+ -55.858753 226.042892 373.154694 
+  Rotation matrix:
+ -0.373561 0.524257 -0.765249
+ -0.537127 -0.794541 -0.283195
+ -0.756489 0.305246 0.578402
+ Translation vector:
+ -55.903454 226.223770 373.453308 
+  True rotation matrix:
+ 0.009712 0.997976 0.062854
+ 0.994117 -0.016417 0.107059
+ 0.107874 0.061444 -0.992264
+ True translation vector:
+ -365.067902 173.488449 551.430420 
+  Rotation matrix:
+ 0.010217 0.998126 0.060329
+ 0.993982 -0.016275 0.108329
+ 0.109108 0.058859 -0.992286
+ Translation vector:
+ -365.164825 173.534515 551.576782 
+  True rotation matrix:
+ -0.286043 0.875833 -0.388710
+ 0.955497 0.291252 -0.046887
+ 0.072147 -0.384822 -0.920166
+ True translation vector:
+ -554.921631 707.746704 787.113892 
+  Rotation matrix:
+ -0.282628 0.877315 -0.387866
+ 0.954541 0.293923 -0.049606
+ 0.070483 -0.384254 -0.920504
+ Translation vector:
+ -557.035095 710.442322 790.111755 
+  True rotation matrix:
+ -0.290591 0.774795 0.561470
+ -0.742817 0.187211 -0.642787
+ -0.603142 -0.603858 0.521129
+ True translation vector:
+ -71.755409 -419.753479 488.512238 
+  Rotation matrix:
+ -0.290950 0.774839 0.561225
+ -0.743156 0.187332 -0.642360
+ -0.602860 -0.603972 0.521322
+ Translation vector:
+ -71.654655 -419.164124 487.826324 
+  True rotation matrix:
+ -0.232818 0.334533 0.913172
+ 0.694171 0.714789 -0.084875
+ -0.681118 0.614137 -0.398639
+ True translation vector:
+ 861.033264 219.618423 1338.336792 
+  Rotation matrix:
+ -0.233917 0.334066 0.913062
+ 0.694336 0.714504 -0.085914
+ -0.681087 0.613876 -0.399089
+ Translation vector:
+ 862.981934 220.115479 1341.365601 
+  True rotation matrix:
+ 0.179363 0.399288 -0.899109
+ -0.672277 -0.617498 -0.408338
+ -0.718243 0.677691 0.157676
+ True translation vector:
+ -512.118408 5.830613 743.391846 
+  Rotation matrix:
+ 0.177915 0.400652 -0.898790
+ -0.672284 -0.617492 -0.408335
+ -0.718596 0.676892 0.159491
+ Translation vector:
+ -512.230042 5.831883 743.553772 
+ 
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrUpCmpIPL(_8U_C1)                          line: 457         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+Select up_down, a/u/d, [a] > 
+Select data_types, a/8u/32f, [a] > 
+Select channels, a/1/3, [a] > 
+Enter min_img_size, int, [5] > 
+Enter max_img_size, int, [640] > 
+Select img_size_delta_type, a/m, [m] > 
+Enter img_size_delta, int, [2] > 
+Enter base_iters, int, [100] > 
+ Maximum error is 1 at w = 5, h = 5, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrUpCmpIPL(_8U_C3)                          line: 458         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+ Maximum error is 1 at w = 5, h = 5, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrUpCmpIPL(_32F_C1)                         line: 459         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+ Maximum error is 1.19209e-007 at w = 10, h = 5, iteration = 2
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrUp                                                        |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrUpCmpIPL(_32F_C3)                         line: 460         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+ Maximum error is 1.19209e-007 at w = 5, h = 5, iteration = 3
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrDownCmpIPL(_8U_C1)                        line: 462         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+Maximum error is 0 at w = 0, h = 0, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrDownCmpIPL(_8U_C3)                        line: 463         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+Maximum error is 0 at w = 0, h = 0, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrDownCmpIPL(_32F_C1)                       line: 464         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+Maximum error is 1.19209e-007 at w = 80, h = 80, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrDown                                                      |
+|<t>est      : Comparing with IPL-based pipeline                              |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : PyrDownCmpIPL(_32F_C3)                       line: 465         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyramids.cpp             |
++-----------------------------------------------------------------------------+
+Maximum error is 1.19209e-007 at w = 640, h = 80, iteration = 0
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : line_smp_test(_8U_C1)                        line: 567         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Select data_types, a/8u/32f, [a] > 
+Select channels, a/1/3, [a] > 
+Enter img_size, int, [537] > 
+Enter base_iters, int, [100] > 
+Max err is 0 at i = 0, seed = 71df5adf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : line_smp_test(_8U_C3)                        line: 568         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 0 at i = 0, seed = 8539ebce
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : line_smp_test(_32F_C1)                       line: 569         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 0 at i = 0, seed = 8acc1aeb
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvInitLineIterator, cvSampleLine                               |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : line_smp_test(_32F_C3)                       line: 570         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 0 at i = 0, seed = 5ec2aece
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetRectSubPix                                                |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : rect_smp_test(_8U_C1)                        line: 572         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 0.00362396 at i = 9, first "bad" pt = (0,0), seed = 346feedf
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvGetRectSubPix                                                |
+|<t>est      : Test of sampler functions                                      |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : rect_smp_test(_32F_C1)                       line: 573         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asamplers.cpp             |
++-----------------------------------------------------------------------------+
+Max err is 0.0293427 at i = 10, first "bad" pt = (0,0), seed = 1c5fb9ee
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvSnakeImage                                                   |
+|<t>est      : Snakes regression test                                         |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaSnakes(CHECK)                             line: 227         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asnakes.cpp               |
++-----------------------------------------------------------------------------+
+Select data_type, u/s/a, [u] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvCreateSubdiv2D, cvSubdiv2DLocate, cvInitSubdivDelaunay2D, cvSubdivDelaunay2DInsert, cvCalcSubdivVoronoi2D|
+|<t>est      : Calculating Delaunay/Voronoi                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : subdiv_test                                  line: 253         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\asubdivisions.cpp         |
++-----------------------------------------------------------------------------+
+Enter img_size, int, [307] > 
+Enter max_points, int, [1000] > 
+Enter base_iters, int, [100] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(BINARY_8U)                      line: 227         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+Enter Len, long, [106] > 
+Enter Thresh, float, [125] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(BINARY_INV_8U)                  line: 228         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TRUNC_8U)                       line: 229         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TOZERO_8U)                      line: 230         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TOZERO_INV_8U)                  line: 231         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(BINARY_32F)                     line: 233         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(BINARY_INV_32F)                 line: 234         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TRUNC_32F)                      line: 235         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TOZERO_32F)                     line: 236         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvThreshold                                                    |
+|<t>est      : Thresholding                                                   |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : foaThreshold(TOZERO_INV_32F)                 line: 237         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\athresh.cpp               |
++-----------------------------------------------------------------------------+
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+No errors detected for this test
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvUnDistort                                                    |
+|<t>est      : Image undistortion function test                               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fmaUnDistort                                 line: 583         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aundistort.cpp            |
++-----------------------------------------------------------------------------+
+Enter img_width, int, [320] > 
+Enter img_height, int, [240] > 
+Enter roi_step, int, [0] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPreCornerDetect                                              |
+|<t>est      : Calculating the Convolution with Sobel operators               |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : fcaPreCorner                                 line: 198         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\aprecorner.cpp            |
++-----------------------------------------------------------------------------+
+Select data_types, u/s/f/a, [a] > 
+Enter lImageHeight, int, [100] > 
+Enter lImageWidth, int, [100] > 
+Enter kerSize, int, [7] > 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrSegmentation                                              |
+|<t>est      : Image segmentation by pyramids                                 |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aPyrSegmentation(_8U_C1)                     line: 248         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyrsegmentation.cpp      |
++-----------------------------------------------------------------------------+
+Enter width, int, [128] > 
+Enter height, int, [128] > 
+Enter level, int, [5] > 
+upper =20.000000 diff =0 
+
+
+-Next test.
+
++-----------------------------------------------------------------------------+
+|<f>unction  : cvPyrSegmentation                                              |
+|<t>est      : Image segmentation by pyramids                                 |
+|<c>lass     : Algorithm                                                      |
+|<T>est body : aPyrSegmentation(_8U_C3)                     line: 249         |
+|<S>ource    : C:\Program Files\OpenCV\tests\cv\src\apyrsegmentation.cpp      |
++-----------------------------------------------------------------------------+
+Enter width, int, [128] > 
+Enter height, int, [128] > 
+Enter level, int, [5] > 
+upper =20.000000 diff =0 
+
+
+-Next test.
+
+-End testing.
+

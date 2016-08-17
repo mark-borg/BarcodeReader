@@ -1,0 +1,33 @@
+# Borland C++ >=5.5
+
+!ifdef debug
+OPT= debug=1
+!else
+OPT= 
+!endif
+
+all:
+	cd ..\cxcore\src
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\cv\src
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\cvaux\src
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\otherlibs\highgui
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\tests\cxts
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\tests\cxcore\src
+	make -f makefile.bcc $(OPT)
+	cd ..\..\..\_make
+	cd ..\tests\trs
+	make -f makefile.bcc $(OPT)
+	cd ..\..\_make
+	cd ..\tests\cv\src
+	make -f makefile.bcc $(OPT)
+	cd ..\..\..\_make

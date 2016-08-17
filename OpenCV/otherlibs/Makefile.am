@@ -1,0 +1,1 @@
+SUBDIRS = highgui cvcam

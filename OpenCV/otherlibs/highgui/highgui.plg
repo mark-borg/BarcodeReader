@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: highgui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"..\..\_temp\HighGUI_Rls/highgui.res" /d "NDEBUG" "D:\OpenCV\otherlibs\highgui\highgui.rc"" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP46.tmp" with contents
+[
+/nologo /MD /W4 /Zi /O2 /I "..\..\cxcore\include" /I "..\..\cv\include" /I ".\\" /I "..\_graphics\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "CVAPI_EXPORTS" /D "HAVE_JPEG" /D "HAVE_PNG" /D "HAVE_TIFF" /FR"..\..\_temp\HighGUI_Rls/" /Fp"..\..\_temp\HighGUI_Rls/highgui.pch" /Yu"_highgui.h" /Fo"..\..\_temp\HighGUI_Rls/" /Fd"..\..\_temp\HighGUI_Rls/" /FD /c 
+"D:\OpenCV\otherlibs\highgui\bitstrm.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_base.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_bmp.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_jpeg.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_png.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_pxm.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_sunras.cpp"
+"D:\OpenCV\otherlibs\highgui\grfmt_tiff.cpp"
+"D:\OpenCV\otherlibs\highgui\cvcap.cpp"
+"D:\OpenCV\otherlibs\highgui\image.cpp"
+"D:\OpenCV\otherlibs\highgui\loadsave.cpp"
+"D:\OpenCV\otherlibs\highgui\utils.cpp"
+"D:\OpenCV\otherlibs\highgui\window_lnx.cpp"
+"D:\OpenCV\otherlibs\highgui\window_w32.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP46.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP47.tmp" with contents
+[
+/nologo /MD /W4 /Zi /O2 /I "..\..\cxcore\include" /I "..\..\cv\include" /I ".\\" /I "..\_graphics\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "CVAPI_EXPORTS" /D "HAVE_JPEG" /D "HAVE_PNG" /D "HAVE_TIFF" /FR"..\..\_temp\HighGUI_Rls/" /Fp"..\..\_temp\HighGUI_Rls/highgui.pch" /Yc"_highgui.h" /Fo"..\..\_temp\HighGUI_Rls/" /Fd"..\..\_temp\HighGUI_Rls/" /FD /c 
+"D:\OpenCV\otherlibs\highgui\precomp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP47.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP48.tmp" with contents
+[
+d:/opencv/lib/cxcore.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib comctl32.lib libjpeg.lib libpng.lib libtiff.lib zlib.lib vfw32.lib /nologo /dll /incremental:no /pdb:"..\..\_temp\HighGUI_Rls/highgui096va.pdb" /debug /machine:I386 /nodefaultlib:"libmmd.lib" /out:"..\..\bin/highgui096va.dll" /implib:"..\..\lib/highgui.lib" /libpath:"..\..\lib" /libpath:"..\_graphics\lib" 
+\OpenCV\_temp\HighGUI_Rls\bitstrm.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_base.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_bmp.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_jpeg.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_png.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_pxm.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_sunras.obj
+\OpenCV\_temp\HighGUI_Rls\grfmt_tiff.obj
+\OpenCV\_temp\HighGUI_Rls\cvcap.obj
+\OpenCV\_temp\HighGUI_Rls\image.obj
+\OpenCV\_temp\HighGUI_Rls\loadsave.obj
+\OpenCV\_temp\HighGUI_Rls\precomp.obj
+\OpenCV\_temp\HighGUI_Rls\utils.obj
+\OpenCV\_temp\HighGUI_Rls\window_lnx.obj
+\OpenCV\_temp\HighGUI_Rls\window_w32.obj
+\OpenCV\_temp\HighGUI_Rls\highgui.res
+\OpenCV\lib\cxcore.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP48.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+precomp.cpp
+Compiling...
+bitstrm.cpp
+grfmt_base.cpp
+grfmt_bmp.cpp
+grfmt_jpeg.cpp
+grfmt_png.cpp
+grfmt_pxm.cpp
+grfmt_sunras.cpp
+grfmt_tiff.cpp
+cvcap.cpp
+image.cpp
+loadsave.cpp
+utils.cpp
+window_lnx.cpp
+window_w32.cpp
+D:\OpenCV\otherlibs\highgui\window_w32.cpp(1539) : warning C4505: 'icvUpdateWindowPosEx' : unreferenced local function has been removed
+        D:\OpenCV\otherlibs\highgui\window_w32.cpp(148) : see declaration of 'icvUpdateWindowPosEx'
+Generating Code...
+Linking...
+   Creating library ..\..\lib/highgui.lib and object ..\..\lib/highgui.exp
+
+
+
+<h3>Results</h3>
+highgui096va.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

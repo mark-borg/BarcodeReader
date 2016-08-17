@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cvhaartraining - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP87.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\src" /I "..\include" /I "../../../cv/include" /I "../../../cv/src" /I "../../../cxcore/include" /I "../../../otherlibs/highgui" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"../../../_temp/cvhaartraining_rls/cvhaartraining.pch" /YX /Fo"../../../_temp/cvhaartraining_rls/" /Fd"../../../_temp/cvhaartraining_rls/" /FD -Qopenmp /c 
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvboost.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvcommon.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvhaarclassifier.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvhaartraining.cpp"
+"C:\Program Files\OpenCV\apps\HaarTraining\src\cvsamples.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP87.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP88.tmp" with contents
+[
+/nologo /out:"../../../lib/cvhaartraining.lib" 
+"\Program Files\OpenCV\_temp\cvhaartraining_rls\cvboost.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_rls\cvcommon.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_rls\cvhaarclassifier.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_rls\cvhaartraining.obj"
+"\Program Files\OpenCV\_temp\cvhaartraining_rls\cvsamples.obj"
+"\Program Files\OpenCV\lib\highgui.lib"
+"\Program Files\OpenCV\lib\cxcore.lib"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP88.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '-Qopenmp'
+cvboost.cpp
+cvcommon.cpp
+cvhaarclassifier.cpp
+cvhaartraining.cpp
+cvsamples.cpp
+Creating library...
+cxcore.lib(cxcore096.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in highgui.lib(highgui096.dll); second definition ignored
+<h3>
+--------------------Configuration: haartraining - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\src" /I "..\include" /I "../../../cv/include" /I "../../../cv/src" /I "../../../cxcore/include" /I "../../../otherlibs/highgui" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"../../../_temp/haartraining_rls/haartraining.pch" /YX /Fo"../../../_temp/haartraining_rls/" /Fd"../../../_temp/haartraining_rls/" /FD -Qopenmp /c 
+"C:\Program Files\OpenCV\apps\HaarTraining\src\haartraining.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP8A.tmp" 
+Creating temporary file "C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+cvhaartraining.lib highgui.lib cxcore.lib cv.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"../../../_temp/haartraining_rls/haartraining.pdb" /machine:I386 /nodefaultlib:"libmmd.lib" /out:"../../../bin\haartraining.exe" /libpath:"../../../lib" /libpath:"../../../otherlibs/_Ipl/lib/msvc" 
+"\Program Files\OpenCV\_temp\haartraining_rls\haartraining.obj"
+"\Program Files\OpenCV\lib\cvhaartraining.lib"
+"\Program Files\OpenCV\lib\cxcore.lib"
+"\Program Files\OpenCV\lib\highgui.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\Mark\LOCALS~1\Temp\RSP8B.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '-Qopenmp'
+haartraining.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+haartraining.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

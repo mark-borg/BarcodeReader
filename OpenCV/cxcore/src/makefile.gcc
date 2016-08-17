@@ -1,0 +1,131 @@
+# Makefile for GNU C/C++ 3.x or later
+
+CXX = g++
+LINK = g++
+
+ifdef debug
+
+SUFFIX = d
+DR = _Dbg
+
+else
+
+SUFFIX = 
+DR = _Rls
+
+endif
+
+OUTBIN = ..\..\bin\cxcore096$(SUFFIX).dll
+OUTLIB = ..\..\lib\libcxcore$(SUFFIX).a
+
+OBJS = ..\..\_temp\cxcore$(DR)_gcc\cxalloc.o ..\..\_temp\cxcore$(DR)_gcc\cxarithm.o \
+..\..\_temp\cxcore$(DR)_gcc\cxarray.o ..\..\_temp\cxcore$(DR)_gcc\cxcmp.o \
+..\..\_temp\cxcore$(DR)_gcc\cxconvert.o ..\..\_temp\cxcore$(DR)_gcc\cxcopy.o \
+..\..\_temp\cxcore$(DR)_gcc\cxdatastructs.o ..\..\_temp\cxcore$(DR)_gcc\cxdrawing.o \
+..\..\_temp\cxcore$(DR)_gcc\cxdxt.o ..\..\_temp\cxcore$(DR)_gcc\cxerror.o \
+..\..\_temp\cxcore$(DR)_gcc\cxjacobieigens.o ..\..\_temp\cxcore$(DR)_gcc\cxlogic.o \
+..\..\_temp\cxcore$(DR)_gcc\cxmathfuncs.o ..\..\_temp\cxcore$(DR)_gcc\cxmatmul.o \
+..\..\_temp\cxcore$(DR)_gcc\cxmatrix.o ..\..\_temp\cxcore$(DR)_gcc\cxmean.o \
+..\..\_temp\cxcore$(DR)_gcc\cxmeansdv.o ..\..\_temp\cxcore$(DR)_gcc\cxminmaxloc.o \
+..\..\_temp\cxcore$(DR)_gcc\cxnorm.o ..\..\_temp\cxcore$(DR)_gcc\cxouttext.o \
+..\..\_temp\cxcore$(DR)_gcc\cxpersistence.o ..\..\_temp\cxcore$(DR)_gcc\cxprecomp.o \
+..\..\_temp\cxcore$(DR)_gcc\cxrand.o ..\..\_temp\cxcore$(DR)_gcc\cxsumpixels.o \
+..\..\_temp\cxcore$(DR)_gcc\cxsvd.o ..\..\_temp\cxcore$(DR)_gcc\cxswitcher.o \
+..\..\_temp\cxcore$(DR)_gcc\cxtables.o ..\..\_temp\cxcore$(DR)_gcc\cxutils.o 
+
+OBJ_SHRT = cxalloc.o cxarithm.o cxarray.o cxcmp.o cxconvert.o cxcopy.o \
+cxdatastructs.o cxdrawing.o cxdxt.o cxerror.o cxjacobieigens.o cxlogic.o \
+cxmathfuncs.o cxmatmul.o cxmatrix.o cxmean.o cxmeansdv.o cxminmaxloc.o cxnorm.o \
+cxouttext.o cxpersistence.o cxprecomp.o cxrand.o cxsumpixels.o cxsvd.o cxswitcher.o \
+cxtables.o cxutils.o 
+
+
+
+INC = ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h \
+../include/cxtypes.h ./_cxcore.h ./_cxipp.h 
+
+
+CXXFLAGS2 = -I"../include" -I"." -Wall -c -o 
+LINKFLAGS2 = -o$(OUTBIN) -shared -Wl,-call_shared,--out-implib,$(OUTLIB) 
+
+ifdef debug
+
+CXXFLAGS = -D"WIN32" -D"CVAPI_EXPORTS" -D"_WINDOWS" -D"_DEBUG" -O0 -ggdb3 $(CXXFLAGS2)
+LIBS = -lkernel32 -luser32 -lgdi32 -ladvapi32 
+LINKFLAGS = $(LINKFLAGS2) 
+
+else
+
+CXXFLAGS = -D"WIN32" -D"NDEBUG" -D"CVAPI_EXPORTS" -D"_WINDOWS" -O3 -g -fomit-frame-pointer -march=i686 -ffast-math $(CXXFLAGS2)
+LIBS = -lkernel32 -luser32 -lgdi32 -ladvapi32 
+LINKFLAGS = $(LINKFLAGS2) 
+
+endif
+
+
+$(OUTBIN): $(OBJS)
+	-mkdir ..\..\bin 2> nul
+	-mkdir ..\..\lib 2> nul
+	-move "..\..\_temp\cxcore$(DR)_gcc\*.o" .
+	$(LINK) $(LINKFLAGS) $(OBJ_SHRT) $(LIBS)
+	-move *.o "..\..\_temp\cxcore$(DR)_gcc"
+
+all: $(OUTBIN)
+
+..\..\_temp\cxcore$(DR)_gcc\cxalloc.o: .\cxalloc.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	@-mkdir ..\..\_temp\cxcore$(DR)_gcc 2>nul
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxalloc.o .\cxalloc.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxarithm.o: .\cxarithm.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxarithm.o .\cxarithm.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxarray.o: .\cxarray.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxarray.o .\cxarray.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxcmp.o: .\cxcmp.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxcmp.o .\cxcmp.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxconvert.o: .\cxconvert.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxconvert.o .\cxconvert.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxcopy.o: .\cxcopy.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxcopy.o .\cxcopy.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxdatastructs.o: .\cxdatastructs.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxdatastructs.o .\cxdatastructs.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxdrawing.o: .\cxdrawing.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxdrawing.o .\cxdrawing.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxdxt.o: .\cxdxt.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxdxt.o .\cxdxt.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxerror.o: .\cxerror.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxerror.o .\cxerror.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxjacobieigens.o: .\cxjacobieigens.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxjacobieigens.o .\cxjacobieigens.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxlogic.o: .\cxlogic.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxlogic.o .\cxlogic.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxmathfuncs.o: .\cxmathfuncs.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxmathfuncs.o .\cxmathfuncs.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxmatmul.o: .\cxmatmul.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxmatmul.o .\cxmatmul.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxmatrix.o: .\cxmatrix.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxmatrix.o .\cxmatrix.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxmean.o: .\cxmean.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxmean.o .\cxmean.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxmeansdv.o: .\cxmeansdv.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxmeansdv.o .\cxmeansdv.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxminmaxloc.o: .\cxminmaxloc.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxminmaxloc.o .\cxminmaxloc.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxnorm.o: .\cxnorm.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxnorm.o .\cxnorm.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxouttext.o: .\cxouttext.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxouttext.o .\cxouttext.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxpersistence.o: .\cxpersistence.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxpersistence.o .\cxpersistence.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxprecomp.o: .\cxprecomp.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxprecomp.o .\cxprecomp.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxrand.o: .\cxrand.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxrand.o .\cxrand.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxsumpixels.o: .\cxsumpixels.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxsumpixels.o .\cxsumpixels.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxsvd.o: .\cxsvd.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxsvd.o .\cxsvd.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxswitcher.o: .\cxswitcher.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxswitcher.o .\cxswitcher.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxtables.o: .\cxtables.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxtables.o .\cxtables.cpp
+..\..\_temp\cxcore$(DR)_gcc\cxutils.o: .\cxutils.cpp ../include/cxcore.h ../include/cxerror.h ../include/cxmisc.h ../include/cxtypes.h ./_cxcore.h ./_cxipp.h
+	-$(CXX) $(CXXFLAGS)..\..\_temp\cxcore$(DR)_gcc\cxutils.o .\cxutils.cpp
